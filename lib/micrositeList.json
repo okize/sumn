@@ -1,0 +1,191 @@
+{
+  "sites": {
+    "ComputingPowerCenter": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "computingpowercenter",
+      "url": "http://computingpowercenter.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "IntegratedSolutionsCenter": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "integratedsolutionscenter",
+      "url": "http://simplifiedITcenter.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "VirtualizationManagementCenter": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "virtualizationmanagementcenter",
+      "url": "http://advancevirtualization.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "Compellent": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "compellent",
+      "url": "http://storageexpertcenter.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "HPESS": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "hpess",
+      "url": "http://hp-securitycenter.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "HPServicesEMEA": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "hpservicesemea",
+      "url": "http://hp-applications.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "NetAppNativeAdvertising": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "netappnativeadvertising",
+      "url": "http://searchstorage.techtarget.com/Sponsored-News-Archive",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "HPCI2": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "hpci2",
+      "url": "http://Convergedinfrastructure.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "CiscoUnifiedDatacenter": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "ciscounifieddatacenter",
+      "url": "http://ciscounifieddatacenter.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "RIMMobileChaos": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "rimmobilechaos",
+      "url": "http://embracingmobilechaos.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "HPConvergedCloudCentre": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "hpconvergedcloudcentre",
+      "url": "http://www.hp-convergedcloud.com/",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "VMworld2012": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "vmworld2012",
+      "url": "http://searchvmware.techtarget.com/vmworld2012veeam",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "VMworldEurope2012": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "vmworldeurope2012",
+      "url": "http://searchvmware.techtarget.com/vmworldEurope2012HDS",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "SmarterComputingRadioSeries": {
+      "active": true,
+      "added": 1351755174285,
+      "foldername": "smartercomputingradioseries",
+      "url": "http://searchdatamanagement.techtarget.com/SmarterComputingRadioSeries",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "IBMSmarterPlanet": {
+      "active": true,
+      "added": 1352828984166,
+      "foldername": "ibmsmarterplanetuk",
+      "url": "http://www.computerweekly.com/IBMSmarterPlanet",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "HPEnterpriseServicesSolutionsCentre": {
+      "active": true,
+      "added": 1355353344695,
+      "foldername": "hpenterpriseservicessolutionscentre",
+      "url": "http://www.hp-enterprisesolutions.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 1353431037822
+      }
+    },
+    "RIMMobileChaos2": {
+      "active": true,
+      "added": 1358904217963,
+      "foldername": "rimmobilechaos2",
+      "url": "http://embracingmobilechaos.com",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    }
+  }
+}

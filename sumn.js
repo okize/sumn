@@ -8,7 +8,7 @@ var sumn = require('./lib/app');
 var _program = require('commander'); // https://github.com/visionmedia/commander.js
 
 _program
-  .version('0.0.1')
+  .version('0.0.3')
   .option('-l, --list', 'generate a list of all "published" microsites');
 
 _program
@@ -42,7 +42,7 @@ _program
 
 _program.parse(process.argv);
 
-// @todo spaghettirific... fix this mess
+// @todo fix this mess
 if (!_program.args.length) {
 
   if (_program.list) {
@@ -61,7 +61,9 @@ if (!_program.args.length) {
 
   }
 
-} // else {
+}
+
+// else {
 //   // warn aboud invalid commands
 //   var validCommands = _program.commands.map(function(cmd){
 //     return cmd.name;
@@ -73,5 +75,4 @@ if (!_program.args.length) {
 //   if (invalidCommands.length) {
 //     console.log('\n [ERROR] - Invalid command: "%s". See "--help" for a list of available commands.\n', invalidCommands.join(', '));
 //   }
-
 // }
