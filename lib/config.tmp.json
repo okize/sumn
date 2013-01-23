@@ -1,0 +1,21 @@
+{
+  "username": "",
+  "fullname": "",
+  "email": "",
+  "os": "",
+  "browser": "",
+  "localDevelopmentServer": "",
+  "localProductionServer": "",
+  "ftp": {
+    "host": "",
+    "port": 21,
+    "username": "",
+    "password": ""
+  },
+  "cdn": {
+    "url": "",
+    "mediaPath": "",
+    "username": "",
+    "password": ""
+  }
+}

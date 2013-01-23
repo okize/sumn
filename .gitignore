@@ -1,0 +1,8 @@
+config.json
+npm-debug.log
+node_modules/
+boilerplate/
+bin/
+media/
+src/
+temp/

@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "sumn",
+  "description": "Start Up a Microsite Now - a command-line tool for microsite front-end management.",
+  "version": "0.1.0",
+  "dependencies": {
+    "cli-color": "~0.2",
+    "commander": "~0.5",
+    "jsftp": "~0.5",
+    "open": "0.0.2",
+    "prompt": "~0.2",
+    "sugar": "~1.3",
+    "underscore": "~1.4",
+    "wrench": "~1.3"
+  },
+  "devDependencies": {
+  },
+  "bin": {
+    "sumn": "./sumn.js"
+  },
+  "main": "./sumn.js",
+  "engine": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
