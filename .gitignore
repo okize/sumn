@@ -2,5 +2,6 @@ config.json
 npm-debug.log
 node_modules/
 media/
-src/
+src/sites/
+src/fonts/
 temp/

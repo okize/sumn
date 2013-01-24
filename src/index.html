@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ENG microsites on local</title>
+
+  <style>
+    body { background-color: #000; color: #fff; font-family: verdana, tahoma, sans-serif; margin: 20px; }
+    h1 { font-size: 30px; }
+    a { color: #fff; }
+  </style>
+
+</head>
+<body>
+  <h1>Microsites</h1>
+
+  <ul></ul>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script>
+
+    $(document).on('ready', function() {
+
+      // $.getJSON('http://microsites.eng.techtarget.com/micrositeList.php', function (data) {
+
+      //   for (var site in data.sites) {
+      //     $('ul').append('<li><a href="/'  + site + '">' + site + '</a></li>');
+      //   }
+
+      // });
+
+      // right now using a symlink to actual json file...
+      function getMicrositeList( ) {
+        return $.getJSON('micrositeListClone.json').pipe(function (data) {
+          return data.sites;
+        });
+      }
+
+      var list = getMicrositeList();
+
+      list.done(function (items) {
+        console.log(items);
+        for (var site in items) {
+          console.log(site);
+          $('ul').append('<li><a href="/sites/'  + site + '">' + site + '</a></li>');
+        }
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
