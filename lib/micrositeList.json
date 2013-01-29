@@ -1,11 +1,11 @@
 {
   "sites": {
     "DellEmpowers2": {
-      "active": false,
+      "activeAccount": false,
       "added": 1351755174285,
       "foldername": "dellempowers2",
       "isEmbedded": false,
-      "url": "http://www.dellempowers.com",
+      "url": "http://dellempowers.com",
       "urlPreview": "http://preview.techtarget.com:8080/DellEmpowers2",
       "releases": {
         "count": 0,
@@ -13,7 +13,7 @@
       }
     },
     "MicrosoftPrivateCloudSolutions": {
-      "active": false,
+      "activeAccount": false,
       "added": 1351755174285,
       "foldername": "microsoftprivatecloudsolutions",
       "isEmbedded": true,
@@ -25,7 +25,7 @@
       }
     },
     "ComputingPowerCenter": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "computingpowercenter",
       "isEmbedded": false,
@@ -37,7 +37,7 @@
       }
     },
     "IntegratedSolutionsCenter": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "integratedsolutionscenter",
       "isEmbedded": false,
@@ -49,7 +49,7 @@
       }
     },
     "VirtualizationManagementCenter": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "virtualizationmanagementcenter",
       "isEmbedded": false,
@@ -61,7 +61,7 @@
       }
     },
     "Compellent": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "compellent",
       "isEmbedded": false,
@@ -73,7 +73,7 @@
       }
     },
     "HPESS": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "hpess",
       "isEmbedded": false,
@@ -85,7 +85,7 @@
       }
     },
     "HPServicesEMEA": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "hpservicesemea",
       "isEmbedded": false,
@@ -97,7 +97,7 @@
       }
     },
     "NetAppNativeAdvertising": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "netappnativeadvertising",
       "isEmbedded": true,
@@ -109,7 +109,7 @@
       }
     },
     "HPCI2": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "hpci2",
       "isEmbedded": false,
@@ -121,7 +121,7 @@
       }
     },
     "CiscoUnifiedDatacenter": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "ciscounifieddatacenter",
       "isEmbedded": false,
@@ -133,7 +133,7 @@
       }
     },
     "RIMMobileChaos": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "rimmobilechaos",
       "isEmbedded": false,
@@ -145,11 +145,11 @@
       }
     },
     "HPConvergedCloudCentre": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "hpconvergedcloudcentre",
       "isEmbedded": false,
-      "url": "http://www.hp-convergedcloud.com/",
+      "url": "http://hp-convergedcloud.com/",
       "urlPreview": "http://preview.techtarget.com:8080/HPConvergedCloudCentre",
       "releases": {
         "count": 0,
@@ -157,7 +157,7 @@
       }
     },
     "VMworld2012": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "vmworld2012",
       "isEmbedded": true,
@@ -169,7 +169,7 @@
       }
     },
     "VMworldEurope2012": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "vmworldeurope2012",
       "isEmbedded": true,
@@ -181,7 +181,7 @@
       }
     },
     "SmarterComputingRadioSeries": {
-      "active": true,
+      "activeAccount": true,
       "added": 1351755174285,
       "foldername": "smartercomputingradioseries",
       "isEmbedded": true,
@@ -193,11 +193,11 @@
       }
     },
     "IBMSmarterPlanet": {
-      "active": true,
+      "activeAccount": true,
       "added": 1352828984166,
       "foldername": "ibmsmarterplanetuk",
       "isEmbedded": true,
-      "url": "http://www.computerweekly.com/IBMSmarterPlanet",
+      "url": "http://computerweekly.com/IBMSmarterPlanet",
       "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/IBMSmarterPlanet",
       "releases": {
         "count": 0,
@@ -205,35 +205,35 @@
       }
     },
     "HPEnterpriseServicesSolutionsCentre": {
-      "active": true,
+      "activeAccount": true,
       "added": 1355353344695,
       "foldername": "hpenterpriseservicessolutionscentre",
       "isEmbedded": false,
-      "url": "http://www.hp-enterprisesolutions.com",
+      "url": "http://hp-enterprisesolutions.com",
       "urlPreview": "http://preview.techtarget.com:8080/HPEnterpriseServicesSolutionsCentre",
       "releases": {
         "count": 0,
         "last": 0
       }
     },
-    "RIMMobileChaos2": {
-      "active": true,
+    "RIMEmbracingMobileChaos2": {
+      "activeAccount": true,
       "added": 1358904217963,
-      "foldername": "rimmobilechaos2",
+      "foldername": "rimembracingmobilechaos2",
       "isEmbedded": false,
       "url": "http://embracingmobilechaos.com",
-      "urlPreview": "http://preview.techtarget.com:8080/RIMMobileChaos2",
+      "urlPreview": "http://preview.techtarget.com:8080/RIMEmbracingMobileChaos2",
       "releases": {
         "count": 0,
         "last": 0
       }
     },
     "IntelITConsumerizationCorner": {
-      "active": true,
+      "activeAccount": true,
       "added": 1359054656675,
       "foldername": "intelitconsumerizationcorner",
       "isEmbedded": false,
-      "url": "",
+      "url": "http://searchconsumerization.techtarget.com/IntelITConsumerizationCorner",
       "urlPreview": "http://preview.techtarget.com:8080/searchConsumerization/IntelITConsumerizationCorner",
       "releases": {
         "count": 0,
@@ -241,11 +241,11 @@
       }
     },
     "Oraclebusinesstransformationcentre": {
-      "active": true,
+      "activeAccount": true,
       "added": 1359054720310,
       "foldername": "oraclebusinesstransformationcentre",
       "isEmbedded": false,
-      "url": "",
+      "url": "http://computerweekly.com/Oraclebusinesstransformationcentre",
       "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/Oraclebusinesstransformationcentre",
       "releases": {
         "count": 0,
@@ -253,7 +253,7 @@
       }
     },
     "KofaxEmbeddedSite": {
-      "active": true,
+      "activeAccount": true,
       "added": 1359068180779,
       "foldername": "kofaxembeddedsite",
       "isEmbedded": false,

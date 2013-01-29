@@ -5,8 +5,8 @@
   <meta name="pageStart" content="1359057078694" />
   <title>Embedded Version of Microsite</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" type="text/css" href="http://media.qa.ttgtmedia.com/rms/ux/css/global.css" id="stylesheetGlobal" media="screen" />
-  <link rel="stylesheet" type="text/css" href="http://media.qa.ttgtmedia.com/rms/ux/css/searchsqlserver_new.css" id="stylesheetSiteSpecific" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://media.ttgtmedia.com/rms/ux/css/global.css" id="stylesheetGlobal" media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://media.ttgtmedia.com/rms/ux/css/searchsqlserver_new.css" id="stylesheetSiteSpecific" media="screen" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <!-- this needs to be here in order to avoid uncaught reference errors in console -->
@@ -255,6 +255,6 @@
   </div>
 </div>
 
-<script type="text/javascript" src="http://media.qa.ttgtmedia.com/rms/ux/javascript/ss-combined.min.js"></script>
+<script type="text/javascript" src="http://media.ttgtmedia.com/rms/ux/javascript/ss-combined.min.js"></script>
 </body>
 </html>

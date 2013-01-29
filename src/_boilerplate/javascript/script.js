@@ -1,7 +1,7 @@
 /* 2013-01-28 */
 
 // BEGIN: doc ready
-$(document).on('ready', function ($) {
+$(document).ready(function () {
 
   'use strict';
 
