@@ -8,7 +8,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 [hidden] { display: none; }
 
 /* 'namespace' as much of normalize as possible due to embedded microsites */
-#micrositeContainer { background-color: #fff; color: #000; font-family: sans-serif; }
+#micrositeContainer { background-color: #fff; color: #000; font-family: arial, sans-serif; }
 #micrositeContainer h1, #micrositeContainer h2, #micrositeContainer h3, #micrositeContainer h4, #micrositeContainer h5, #micrositeContainer h6 { line-height: 1em; margin: 0 0 1em; padding: 0; }
 #micrositeContainer p { margin: 0 0 1em; }
 #micrositeContainer a { color: #00e; text-decoration: none; }
