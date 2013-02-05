@@ -103,3 +103,5 @@
 </div>
 </div>
 </div>
+Window size: x
+Viewport size: x
