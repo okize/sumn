@@ -1,4 +1,4 @@
-/* 2013-01-28 */
+/* 2013-01-01 */
 
 /* normalize browser defaults as much as possible */
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
@@ -56,8 +56,8 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
 /* social media  & article toolbar */
 #micrositeSocialMediaNav, #micrositeSocialMediaFooter { position: absolute; }
-#micrositeSocialMediaNav { right: 0; top: 35px; }
-#micrositeSocialMediaFooter { right: 0; top: 35px; }
+#micrositeSocialMediaNav { right: 20px; top: 15px; }
+#micrositeSocialMediaFooter { right: 20px; top: 35px; }
 .micrositeSocialMediaButtons ul, #micrositeSocialMediaNav ul, #micrositeSocialMediaFooter ul { list-style: none !important; margin: 0 !important; padding: 0 !important; }
 .micrositeSocialMediaButtons li, #micrositeSocialMediaNav li, #micrositeSocialMediaFooter li { display: block; float: left; line-height: 0; margin: 0 0 0 8px !important; }
 .micrositeSocialMediaButtons li > a, #micrositeSocialMediaNav li > a, #micrositeSocialMediaFooter li > a { background-image: url(../images/spriteSocialMedia.png); background-repeat: no-repeat; display: block; position: relative; white-space: nowrap; overflow: hidden; text-indent: 100%; }
