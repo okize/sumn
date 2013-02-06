@@ -1,3 +1,5 @@
+- var thisPage = 'Link1'
+
 link(rel='stylesheet', href='css/style.css', type='text/css', media='screen')
 script(src='javascript/script.js')
 #micrositeContainer
@@ -7,12 +9,7 @@ script(src='javascript/script.js')
         #micrositeHeaderBanner
           .micrositeModuleContainer
             h1 New microsite h1
-        #micrositeHeaderNavigation
-          ul
-            li.on: a(href='replaceMe') Navigation link1
-            li: a(href='replaceMe') Navigation link1
-            li: a(href='replaceMe') Navigation link1
-            li: a(href='replaceMe') Navigation link1
+        include navigation
         #micrositeSocialMediaNav
           ul
             li.micrositeSocialMedia-email: a(href='#', title='Email A Friend') E-mail
