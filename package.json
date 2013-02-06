@@ -4,6 +4,7 @@
   "description": "Start Up a Microsite Now - a command-line tool for microsite front-end management.",
   "version": "0.1.0",
   "dependencies": {
+    "jade": "~0.28",
     "cli-color": "~0.2",
     "commander": "~0.5",
     "jsftp": "~0.5",

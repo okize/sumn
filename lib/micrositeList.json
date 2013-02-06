@@ -232,7 +232,7 @@
       "activeAccount": true,
       "added": 1359054656675,
       "foldername": "intelitconsumerizationcorner",
-      "isEmbedded": false,
+      "isEmbedded": true,
       "url": "http://searchconsumerization.techtarget.com/IntelITConsumerizationCorner",
       "urlPreview": "http://preview.techtarget.com:8080/searchConsumerization/IntelITConsumerizationCorner",
       "releases": {
@@ -243,8 +243,8 @@
     "Oraclebusinesstransformationcentre": {
       "activeAccount": true,
       "added": 1359054720310,
-      "foldername": "oraclebusinesstransformationcentre",
-      "isEmbedded": false,
+      "foldername": "businesstransformationcentre",
+      "isEmbedded": true,
       "url": "http://computerweekly.com/Oraclebusinesstransformationcentre",
       "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/Oraclebusinesstransformationcentre",
       "releases": {

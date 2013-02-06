@@ -3,33 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>ENG microsites on local</title>
-
-  <style>
-    body { background-color: #000; color: #fff; font-family: verdana, tahoma, sans-serif; margin: 20px; }
-    h1 { font-size: 30px; }
-    a { color: #fff; }
-  </style>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Microsites</h1>
 
-  <ul></ul>
+  <table id="micrositeListTable">
+  <thead>
+    <th>Site Name</th>
+    <th>Date</th>
+    <th>Preview</th>
+    <th>Published</th>
+  </thead>
+  <tbody>
+  </tbody>
+  </table>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>
 
     $(document).on('ready', function() {
 
-      // $.getJSON('http://microsites.eng.techtarget.com/micrositeList.php', function (data) {
-
-      //   for (var site in data.sites) {
-      //     $('ul').append('<li><a href="/'  + site + '">' + site + '</a></li>');
-      //   }
-
-      // });
-
-      // right now using a symlink to actual json file...
+      // for now using a symlink to actual json file...
       function getMicrositeList( ) {
         return $.getJSON('micrositeListClone.json').pipe(function (data) {
           return data.sites;
@@ -37,13 +31,32 @@
       }
 
       var list = getMicrositeList();
+      var arr = [];
+      var rows = '';
+      var created;
+      var ifEmbedded = '';
 
       list.done(function (items) {
-        console.log(items);
+
+        // get array of site names
         for (var site in items) {
-          console.log(site);
-          $('ul').append('<li><a href="/sites/'  + site + '">' + site + '</a></li>');
+          arr.push(site);
         }
+
+        // iterrate through json and build table rows
+        for (var i = 0, len = arr.length; i < len; i++) {
+          ifEmbedded = (items[ arr[i] ].isEmbedded) ? 'embedded.html' : 'index.html';
+          created = new Date(items[ arr[i] ].added);
+          rows += '<tr>'
+          rows += '<td><a href="/sites/' + items[ arr[i] ].foldername + '/' + ifEmbedded + '">' + arr[i] + '</a></td>';
+          rows += '<td>' + created.getFullYear() + '-' + (created.getMonth() + 1) + '-' + (created.getDate() + 1) + '</td>';
+          rows += '<td><a href="' + items[ arr[i] ].urlPreview + '">' + items[ arr[i] ].urlPreview + '</a></td>';
+          rows += '<td><a href="' + items[ arr[i] ].url + '">' + items[ arr[i] ].url + '</a></td>';
+          rows += '</tr>';
+        }
+
+        $('#micrositeListTable').append(rows);
+
       });
 
     });
