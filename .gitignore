@@ -5,3 +5,6 @@ src/sites/
 src/sites.bak/
 src/fonts/
 sumn.tmp/
+*DS_Store
+
+*.scssc
