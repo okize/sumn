@@ -263,6 +263,18 @@
         "count": 0,
         "last": 0
       }
+    },
+    "HPServicesEMEA2": {
+      "activeAccount": true,
+      "added": 1360208013649,
+      "foldername": "hpservicesemea2",
+      "isEmbedded": false,
+      "url": "",
+      "urlPreview": "",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
     }
   }
 }
