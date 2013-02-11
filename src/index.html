@@ -44,12 +44,14 @@
           arr.push(site);
         }
 
+        arr.sort();
+
         // iterrate through json and build table rows
         for (var i = 0, len = arr.length; i < len; i++) {
           ifEmbedded = (items[ arr[i] ].isEmbedded) ? 'embedded.html' : 'index.html';
           created = new Date(items[ arr[i] ].added);
           rows += '<tr>'
-          rows += '<td>' + i + '</td>'
+          rows += '<td>' + (i+1) + '</td>'
           rows += '<td><a href="/sites/' + items[ arr[i] ].foldername + '/' + ifEmbedded + '">' + arr[i] + '</a></td>';
           rows += '<td>' + created.getFullYear() + '.' + (created.getMonth() + 1) + '.' + (created.getDate() + 1) + '</td>';
           rows += '<td><a href="' + items[ arr[i] ].urlPreview + '">' + items[ arr[i] ].urlPreview + '</a></td>';
