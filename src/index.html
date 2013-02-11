@@ -7,12 +7,13 @@
 </head>
 <body>
 
-  <table id="micrositeListTable">
+  <table id="micrositeListTable" class="table table-striped table-bordered">
   <thead>
-    <th>Site Name</th>
-    <th>Date</th>
-    <th>Preview</th>
-    <th>Published</th>
+    <th><i class="icon-th"></i></th>
+    <th><i class="icon-star"></i>&nbsp;Site Name</th>
+    <th><i class="icon-calendar"></i>&nbsp;Date</th>
+    <th><i class="icon-edit"></i>&nbsp;Preview</th>
+    <th><i class="icon-check"></i>&nbsp;Published</th>
   </thead>
   <tbody>
   </tbody>
@@ -48,8 +49,9 @@
           ifEmbedded = (items[ arr[i] ].isEmbedded) ? 'embedded.html' : 'index.html';
           created = new Date(items[ arr[i] ].added);
           rows += '<tr>'
+          rows += '<td>' + i + '</td>'
           rows += '<td><a href="/sites/' + items[ arr[i] ].foldername + '/' + ifEmbedded + '">' + arr[i] + '</a></td>';
-          rows += '<td>' + created.getFullYear() + '-' + (created.getMonth() + 1) + '-' + (created.getDate() + 1) + '</td>';
+          rows += '<td>' + created.getFullYear() + '.' + (created.getMonth() + 1) + '.' + (created.getDate() + 1) + '</td>';
           rows += '<td><a href="' + items[ arr[i] ].urlPreview + '">' + items[ arr[i] ].urlPreview + '</a></td>';
           rows += '<td><a href="' + items[ arr[i] ].url + '">' + items[ arr[i] ].url + '</a></td>';
           rows += '</tr>';
