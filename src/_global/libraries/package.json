@@ -1,0 +1,10 @@
+{
+  "volo": {
+    "dependencies": {
+      "jquery-1.8.2": "github:jquery/jquery/1.8.2",
+      "underscore": "github:documentcloud/underscore/1.4.4",
+      "require": "github:jrburke/requirejs/2.1.4",
+      "almond": "github:jrburke/almond/0.2.4"
+    }
+  }
+}

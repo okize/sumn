@@ -1549,13 +1549,13 @@ table th[class*="span"],
   background-position: -456px -144px;
 }
 
+h1 { margin: 25px auto; width: 400px; text-align: center; }
 
-
-#micrositeListTable {
-  width: 800px; margin: 20px auto;
+#micrositeListTable, #micrositeListTableRetired {
+  width: 1600px; margin: 25px auto;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) ;
 }
 
-
+#micrositeListTableRetired th { background-color: #ccc; }
 
