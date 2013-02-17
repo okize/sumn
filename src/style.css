@@ -1553,8 +1553,15 @@ h1 { margin: 25px auto; width: 400px; text-align: center; }
 
 #micrositeListTable, #micrositeListTableRetired {
   width: 1600px; margin: 25px auto;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) ;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.15), 0 0 40px rgba(0, 0, 0, 0.05) ;
+}
+
+#micrositeListTable tr:hover td, #micrositeListTableRetired tr:hover td {
+  background-color: #ccc !important;
+}
+
+#micrositeListTable td, #micrositeListTableRetired td {
+  cursor: pointer;
 }
 
 #micrositeListTableRetired th { background-color: #ccc; }

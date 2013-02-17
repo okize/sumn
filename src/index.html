@@ -110,6 +110,11 @@
 
         $('#micrositeListTableRetired').append(rowsRetired);
 
+        $('#micrositeListTable, #micrositeListTableRetired').on('click', 'td', function (e) {
+          e.preventDefault();
+          window.open( $(this).children('a').attr('href') );
+        });
+
       });
 
     });
