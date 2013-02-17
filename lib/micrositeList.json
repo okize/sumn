@@ -1,7 +1,7 @@
 {
   "sites": {
     "DellEmpowers2": {
-      "activeAccount": false,
+      "isActive": false,
       "added": 1351755174285,
       "foldername": "dellempowers2",
       "isEmbedded": false,
@@ -13,7 +13,7 @@
       }
     },
     "MicrosoftPrivateCloudSolutions": {
-      "activeAccount": false,
+      "isActive": false,
       "added": 1351755174285,
       "foldername": "microsoftprivatecloudsolutions",
       "isEmbedded": true,
@@ -25,7 +25,7 @@
       }
     },
     "ComputingPowerCenter": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "computingpowercenter",
       "isEmbedded": false,
@@ -37,7 +37,7 @@
       }
     },
     "IntegratedSolutionsCenter": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "integratedsolutionscenter",
       "isEmbedded": false,
@@ -49,7 +49,7 @@
       }
     },
     "VirtualizationManagementCenter": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "virtualizationmanagementcenter",
       "isEmbedded": false,
@@ -61,7 +61,7 @@
       }
     },
     "Compellent": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "compellent",
       "isEmbedded": false,
@@ -73,7 +73,7 @@
       }
     },
     "HPESS": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "hpess",
       "isEmbedded": false,
@@ -85,7 +85,7 @@
       }
     },
     "HPServicesEMEA": {
-      "activeAccount": true,
+      "isActive": false,
       "added": 1351755174285,
       "foldername": "hpservicesemea",
       "isEmbedded": false,
@@ -97,7 +97,7 @@
       }
     },
     "NetAppNativeAdvertising": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "netappnativeadvertising",
       "isEmbedded": true,
@@ -109,11 +109,11 @@
       }
     },
     "HPCI2": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "hpci2",
       "isEmbedded": false,
-      "url": "http://Convergedinfrastructure.com",
+      "url": "http://convergedinfrastructure.com",
       "urlPreview": "http://preview.techtarget.com:8080/HPCI2/",
       "releases": {
         "count": 0,
@@ -121,7 +121,7 @@
       }
     },
     "CiscoUnifiedDatacenter": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "ciscounifieddatacenter",
       "isEmbedded": false,
@@ -133,7 +133,7 @@
       }
     },
     "RIMMobileChaos": {
-      "activeAccount": true,
+      "isActive": false,
       "added": 1351755174285,
       "foldername": "rimmobilechaos",
       "isEmbedded": false,
@@ -145,7 +145,7 @@
       }
     },
     "HPConvergedCloudCentre": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "hpconvergedcloudcentre",
       "isEmbedded": false,
@@ -157,7 +157,7 @@
       }
     },
     "VMworld2012": {
-      "activeAccount": true,
+      "isActive": false,
       "added": 1351755174285,
       "foldername": "vmworld2012",
       "isEmbedded": true,
@@ -169,7 +169,7 @@
       }
     },
     "VMworldEurope2012": {
-      "activeAccount": true,
+      "isActive": false,
       "added": 1351755174285,
       "foldername": "vmworldeurope2012",
       "isEmbedded": true,
@@ -181,7 +181,7 @@
       }
     },
     "SmarterComputingRadioSeries": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1351755174285,
       "foldername": "smartercomputingradioseries",
       "isEmbedded": true,
@@ -193,7 +193,7 @@
       }
     },
     "IBMSmarterPlanet": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1352828984166,
       "foldername": "ibmsmarterplanetuk",
       "isEmbedded": true,
@@ -205,7 +205,7 @@
       }
     },
     "HPEnterpriseServicesSolutionsCentre": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1355353344695,
       "foldername": "hpenterpriseservicessolutionscentre",
       "isEmbedded": false,
@@ -217,7 +217,7 @@
       }
     },
     "RIMEmbracingMobileChaos2": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1358904217963,
       "foldername": "rimembracingmobilechaos2",
       "isEmbedded": false,
@@ -229,7 +229,7 @@
       }
     },
     "IntelITConsumerizationCorner": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1359054656675,
       "foldername": "intelitconsumerizationcorner",
       "isEmbedded": true,
@@ -241,7 +241,7 @@
       }
     },
     "Oraclebusinesstransformationcentre": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1359054720310,
       "foldername": "businesstransformationcentre",
       "isEmbedded": true,
@@ -253,24 +253,24 @@
       }
     },
     "KofaxEmbeddedSite": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1359068180779,
       "foldername": "kofaxembeddedsite",
-      "isEmbedded": false,
-      "url": "",
-      "urlPreview": "",
+      "isEmbedded": true,
+      "url": "http://computerweekly.com/KofaxBusinessProcessImprovementCentre",
+      "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/KofaxEmbeddedSite",
       "releases": {
         "count": 0,
         "last": 0
       }
     },
     "HPServicesEMEA2": {
-      "activeAccount": true,
+      "isActive": true,
       "added": 1360208013649,
       "foldername": "hpservicesemea2",
       "isEmbedded": false,
-      "url": "",
-      "urlPreview": "",
+      "url": "http://hp-applications.com",
+      "urlPreview": "http://preview.techtarget.com:8080/HPServicesEMEA2",
       "releases": {
         "count": 0,
         "last": 0

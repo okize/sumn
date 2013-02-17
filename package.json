@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "dependencies": {
     "jade": "~0.28",
+    "requirejs": "~2",
     "cli-color": "~0.2",
     "commander": "~0.5",
     "jsftp": "~0.5",
