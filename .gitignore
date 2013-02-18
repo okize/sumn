@@ -2,6 +2,7 @@ config.json
 npm-debug.log
 node_modules/
 src/_global/components/
+src/media/
 src/sites/
 src/sites.bak/
 sumn.tmp/
