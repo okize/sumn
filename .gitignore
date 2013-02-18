@@ -1,7 +1,8 @@
 config.json
 npm-debug.log
 node_modules/
-src/build/
+build/
+build.tmp/
 src/_global/components/
 
 src/sites/
