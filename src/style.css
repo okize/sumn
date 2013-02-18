@@ -1553,11 +1553,11 @@ h1 { margin: 25px auto; width: 400px; text-align: center; }
 
 #micrositeListTable, #micrositeListTableRetired {
   width: 1600px; margin: 25px auto;
-  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.15), 0 0 40px rgba(0, 0, 0, 0.05) ;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.075);
 }
 
 #micrositeListTable tr:hover td, #micrositeListTableRetired tr:hover td {
-  background-color: #ccc !important;
+  background-color: #eee !important;
 }
 
 #micrositeListTable td, #micrositeListTableRetired td {
