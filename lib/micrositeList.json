@@ -1,12 +1,24 @@
 {
   "sites": {
-    "DellEmpowers2": {
+    "HPServicesEMEA": {
       "isActive": false,
-      "added": 1351755174285,
-      "foldername": "dellempowers2",
+      "added": 1335240000000,
+      "foldername": "hpservicesemea",
       "isEmbedded": false,
-      "url": "http://dellempowers.com",
-      "urlPreview": "http://preview.techtarget.com:8080/DellEmpowers2",
+      "url": "http://hp-applications.com",
+      "urlPreview": "http://preview.techtarget.com:8080/HPServicesEMEA",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
+    "CiscoUnifiedDatacenter": {
+      "isActive": true,
+      "added": 1337227200000,
+      "foldername": "ciscounifieddatacenter",
+      "isEmbedded": false,
+      "url": "http://ciscounifieddatacenter.com",
+      "urlPreview": "http://preview.techtarget.com:8080/CiscoUnifiedDatacenter",
       "releases": {
         "count": 0,
         "last": 0
@@ -14,7 +26,7 @@
     },
     "MicrosoftPrivateCloudSolutions": {
       "isActive": false,
-      "added": 1351755174285,
+      "added": 1336205143885,
       "foldername": "microsoftprivatecloudsolutions",
       "isEmbedded": true,
       "url": "http://searchVMWare.com/MicrosoftPrivateCloudSolutions",
@@ -24,9 +36,33 @@
         "last": 0
       }
     },
+    "Compellent": {
+      "isActive": true,
+      "added": 1338523200000,
+      "foldername": "compellent",
+      "isEmbedded": false,
+      "url": "http://storageexpertcenter.com",
+      "urlPreview": "http://preview.techtarget.com:8080/Compellent",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
+    "RIMMobileChaos": {
+      "isActive": false,
+      "added": 1338868800000,
+      "foldername": "rimmobilechaos",
+      "isEmbedded": false,
+      "url": "http://embracingmobilechaos.com",
+      "urlPreview": "http://preview.techtarget.com:8080/RIMMobileChaos",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
     "ComputingPowerCenter": {
       "isActive": true,
-      "added": 1351755174285,
+      "added": 1339205143885,
       "foldername": "computingpowercenter",
       "isEmbedded": false,
       "url": "http://computingpowercenter.com",
@@ -38,7 +74,7 @@
     },
     "IntegratedSolutionsCenter": {
       "isActive": true,
-      "added": 1351755174285,
+      "added": 1339205168762,
       "foldername": "integratedsolutionscenter",
       "isEmbedded": false,
       "url": "http://simplifiedITcenter.com",
@@ -50,7 +86,7 @@
     },
     "VirtualizationManagementCenter": {
       "isActive": true,
-      "added": 1351755174285,
+      "added": 1339205189453,
       "foldername": "virtualizationmanagementcenter",
       "isEmbedded": false,
       "url": "http://advancevirtualization.com",
@@ -60,37 +96,13 @@
         "last": 0
       }
     },
-    "Compellent": {
+    "DellEmpowers2": {
       "isActive": true,
-      "added": 1351755174285,
-      "foldername": "compellent",
+      "added": 1341201600000,
+      "foldername": "dellempowers2",
       "isEmbedded": false,
-      "url": "http://storageexpertcenter.com",
-      "urlPreview": "http://preview.techtarget.com:8080/Compellent",
-      "releases": {
-        "count": 0,
-        "last": 0
-      }
-    },
-    "HPESS": {
-      "isActive": true,
-      "added": 1351755174285,
-      "foldername": "hpess",
-      "isEmbedded": false,
-      "url": "http://hp-securitycenter.com",
-      "urlPreview": "http://preview.techtarget.com:8080/HPESS",
-      "releases": {
-        "count": 0,
-        "last": 0
-      }
-    },
-    "HPServicesEMEA": {
-      "isActive": false,
-      "added": 1351755174285,
-      "foldername": "hpservicesemea",
-      "isEmbedded": false,
-      "url": "http://hp-applications.com",
-      "urlPreview": "http://preview.techtarget.com:8080/HPServicesEMEA",
+      "url": "http://dellempowers.com",
+      "urlPreview": "http://preview.techtarget.com:8080/DellEmpowers2",
       "releases": {
         "count": 0,
         "last": 0
@@ -98,7 +110,7 @@
     },
     "NetAppNativeAdvertising": {
       "isActive": true,
-      "added": 1351755174285,
+      "added": 1342105143885,
       "foldername": "netappnativeadvertising",
       "isEmbedded": true,
       "url": "http://searchstorage.techtarget.com/Sponsored-News-Archive",
@@ -108,37 +120,13 @@
         "last": 0
       }
     },
-    "HPCI2": {
+    "HPESS": {
       "isActive": true,
-      "added": 1351755174285,
-      "foldername": "hpci2",
+      "added": 1343188800000,
+      "foldername": "hpess",
       "isEmbedded": false,
-      "url": "http://convergedinfrastructure.com",
-      "urlPreview": "http://preview.techtarget.com:8080/HPCI2/",
-      "releases": {
-        "count": 0,
-        "last": 0
-      }
-    },
-    "CiscoUnifiedDatacenter": {
-      "isActive": true,
-      "added": 1351755174285,
-      "foldername": "ciscounifieddatacenter",
-      "isEmbedded": false,
-      "url": "http://ciscounifieddatacenter.com",
-      "urlPreview": "http://preview.techtarget.com:8080/CiscoUnifiedDatacenter",
-      "releases": {
-        "count": 0,
-        "last": 0
-      }
-    },
-    "RIMMobileChaos": {
-      "isActive": false,
-      "added": 1351755174285,
-      "foldername": "rimmobilechaos",
-      "isEmbedded": false,
-      "url": "http://embracingmobilechaos.com",
-      "urlPreview": "http://preview.techtarget.com:8080/RIMMobileChaos",
+      "url": "http://hp-securitycenter.com",
+      "urlPreview": "http://preview.techtarget.com:8080/HPESS",
       "releases": {
         "count": 0,
         "last": 0
@@ -146,7 +134,7 @@
     },
     "HPConvergedCloudCentre": {
       "isActive": true,
-      "added": 1351755174285,
+      "added": 1343880000000,
       "foldername": "hpconvergedcloudcentre",
       "isEmbedded": false,
       "url": "http://hp-convergedcloud.com/",
@@ -156,9 +144,21 @@
         "last": 0
       }
     },
+    "HPCI2": {
+      "isActive": true,
+      "added": 1344571200000,
+      "foldername": "hpci2",
+      "isEmbedded": false,
+      "url": "http://convergedinfrastructure.com",
+      "urlPreview": "http://preview.techtarget.com:8080/HPCI2/",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
     "VMworld2012": {
       "isActive": false,
-      "added": 1351755174285,
+      "added": 1346904000000,
       "foldername": "vmworld2012",
       "isEmbedded": true,
       "url": "http://searchvmware.techtarget.com/vmworld2012veeam",
@@ -170,7 +170,7 @@
     },
     "VMworldEurope2012": {
       "isActive": false,
-      "added": 1351755174285,
+      "added": 1347422400000,
       "foldername": "vmworldeurope2012",
       "isEmbedded": true,
       "url": "http://searchvmware.techtarget.com/vmworldEurope2012HDS",
@@ -182,7 +182,7 @@
     },
     "SmarterComputingRadioSeries": {
       "isActive": true,
-      "added": 1351755174285,
+      "added": 1350792000000,
       "foldername": "smartercomputingradioseries",
       "isEmbedded": true,
       "url": "http://searchdatamanagement.techtarget.com/SmarterComputingRadioSeries",
@@ -218,7 +218,7 @@
     },
     "RIMEmbracingMobileChaos2": {
       "isActive": true,
-      "added": 1358904217963,
+      "added": 1357804217963,
       "foldername": "rimembracingmobilechaos2",
       "isEmbedded": false,
       "url": "http://embracingmobilechaos.com",
@@ -230,7 +230,7 @@
     },
     "IntelITConsumerizationCorner": {
       "isActive": true,
-      "added": 1359054656675,
+      "added": 1358054656675,
       "foldername": "intelitconsumerizationcorner",
       "isEmbedded": true,
       "url": "http://searchconsumerization.techtarget.com/IntelITConsumerizationCorner",
@@ -252,18 +252,6 @@
         "last": 0
       }
     },
-    "KofaxEmbeddedSite": {
-      "isActive": true,
-      "added": 1359068180779,
-      "foldername": "kofaxembeddedsite",
-      "isEmbedded": true,
-      "url": "http://computerweekly.com/KofaxBusinessProcessImprovementCentre",
-      "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/KofaxEmbeddedSite",
-      "releases": {
-        "count": 0,
-        "last": 0
-      }
-    },
     "HPServicesEMEA2": {
       "isActive": true,
       "added": 1360208013649,
@@ -273,6 +261,18 @@
       "urlPreview": "http://preview.techtarget.com:8080/HPServicesEMEA2",
       "releases": {
         "count": 0,
+        "last": 0
+      }
+    },
+    "KofaxEmbeddedSite": {
+      "isActive": true,
+      "added": 1361995349873,
+      "foldername": "kofaxembeddedsite",
+      "isEmbedded": true,
+      "url": "http://computerweekly.com/KofaxBusinessProcessImprovementCentre",
+      "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/KofaxEmbeddedSite",
+      "releases": {
+        "count": 10,
         "last": 0
       }
     }

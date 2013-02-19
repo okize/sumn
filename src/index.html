@@ -12,11 +12,14 @@
   <table id="micrositeListTable" class="table table-striped table-bordered">
   <thead>
     <th><i class="icon-th"></i></th>
-    <th><i class="icon-star"></i>&nbsp;Site Name</th>
-    <th><i class="icon-calendar"></i>&nbsp;Date</th>
-    <th><i class="icon-share"></i>&nbsp;PD Site</th>
-    <th><i class="icon-edit"></i>&nbsp;Preview</th>
-    <th><i class="icon-check"></i>&nbsp;Published</th>
+    <th><i class="icon-star-empty"></i>&nbsp;Site Name</th>
+    <th><i class="icon-calendar"></i>&nbsp;Created</th>
+    <th><i class="icon-upload"></i>&nbsp;Releases</th>
+    <th><i class="icon-time"></i>&nbsp;Last Release</th>
+    <th>Local</th>
+    <th>PD</th>
+    <th>Preview</th>
+    <th><i class="icon-star"></i>&nbsp;Published</th>
   </thead>
   <tbody>
 <!--     {{#each items}}
@@ -33,7 +36,7 @@
   </table>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/1.7.2/moment.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/tablesort/1.6.1/tablesort.min.js"></script>
   <script>
@@ -68,8 +71,11 @@
                     '<td>{{ num }}</td>' +
                     '<td><a href="{{ localPath }}">{{ name }}</a></td>' +
                     '<td>{{ createDate }}</td>' +
-                    '<td><a href="{{ pdPath }}">PD Site</a></td>' +
-                    '<td><a href="{{ previewPath }}">Preview</a></td>' +
+                    '<td class="releases">{{ releases }}</td>' +
+                    '<td>{{ lastRelease }}</td>' +
+                    '<td class="localSite"><a href="{{ localPath }}"><i class="icon-edit"></i></a></td>' +
+                    '<td class="pdSite"><a href="{{ pdPath }}"><i class="icon-share"></i></a></td>' +
+                    '<td class="previewSite"><a href="{{ previewPath }}"><i class="icon-check"></i></a></td>' +
                     '<td><a href="{{ sitePath }}">{{ sitePath }}</a></td>' +
                     '</tr>' +
                     '{{/sites}}';
@@ -101,7 +107,8 @@
             num: getRowCount(type),
             name: arr[i],
             createDate: moment( new Date(items[ arr[i] ].added) ).format('YYYY.MM.DD'),
-            // createDateOld: created.getFullYear() + '.' + (created.getMonth() + 1) + '.' + (created.getDate() + 1),
+            releases: items[ arr[i] ].releases.count,
+            lastRelease: moment( items[ arr[i] ].releases.last ).fromNow(),
             localPath: '/sites/' + items[ arr[i] ].foldername + '/' + ifEmbedded,
             pdPath: 'http://productdevelopment.techtarget.com/microsites/media.techtarget.com/' + items[ arr[i] ].foldername + '/' + ifEmbedded,
             previewPath: items[ arr[i] ].urlPreview,
@@ -139,11 +146,17 @@
         // open links in new window
         $('#micrositeListTable, #micrositeListTableRetired').on('click', 'td', function (e) {
           e.preventDefault();
-          window.open( $(this).children('a').attr('href') );
+          var href = $(this).children('a').attr('href');
+          if (typeof href !== 'undefined') {
+            window.open( href );
+          }
         });
 
       });
 
+    var bar = moment('2012.10.21').format('X')*1000;
+    console.log(bar);
+    console.log( moment( bar ).format('YYYY.MM.DD') );
     });
 
   </script>

@@ -1552,7 +1552,7 @@ table th[class*="span"],
 h1 { margin: 25px auto; width: 400px; text-align: center; }
 
 #micrositeListTable, #micrositeListTableRetired {
-  width: 1200px; margin: 25px auto;
+  width: 1400px; margin: 25px auto;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.075);
 }
 
@@ -1560,9 +1560,11 @@ h1 { margin: 25px auto; width: 400px; text-align: center; }
   background-color: #eee !important;
 }
 
-#micrositeListTable td, #micrositeListTableRetired td {
-  cursor: pointer;
+#micrositeListTable th, #micrositeListTableRetired th {
+  text-align: center;
 }
 
-#micrositeListTableRetired th { background-color: #ccc; }
+#micrositeListTableRetired thead { background-color: #ccc; }
 
+td.pdSite, td.previewSite, td.localSite { text-align: center; width: 50px; }
+td.releases { text-align: center; width: 80px; }
