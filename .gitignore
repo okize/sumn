@@ -2,7 +2,7 @@ config.json
 npm-debug.log
 node_modules/
 build/
-src/_global/components/
+src/_global/
 
 src/sites/
 src/sites.bak/
