@@ -1552,7 +1552,7 @@ table th[class*="span"],
 h1 { margin: 25px auto; width: 400px; text-align: center; }
 
 #micrositeListTable, #micrositeListTableRetired {
-  width: 1600px; margin: 25px auto;
+  width: 1200px; margin: 25px auto;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.075);
 }
 
