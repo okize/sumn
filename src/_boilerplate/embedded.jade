@@ -1,22 +1,24 @@
+include data
 !!! 5
 html(lang='en', dir='ltr')
   head
     meta(name='pageStart', content='1359057078694')
-    title Embedded Version of Microsite
+    title Embedded Version of #{site.name}
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     link#stylesheetGlobal(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/global.css', media='screen')
     link#stylesheetSiteSpecific(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/searchsqlserver_new.css', media='screen')
     script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
     // this needs to be here in order to avoid uncaught reference errors in console
     script(type='text/javascript')
-      var SITE_name = '';
+      var microsite = '#{site.name}';
       var SITE_v5sid = '';
-      var SITE_hostName = 'techtarget';
+      var SITE_name = '';
       var ENV_clicktrackHost = 'http://clicktrack.techtarget.com';
       var ENV_mediaHost = 'http://cdn.ttgtmedia.com/rms/ux';
       var zone = 'HOME';
       var taxNameWithOutSpecialChars='Home';
-  body
+      var SITE_hostName = 'techtarget';
+  body(id="#{site.name}")
     #header
       #universalBar
         #universalBarCompress

@@ -1,10 +1,9 @@
 config.json
 npm-debug.log
 node_modules/
+build/
+src/_global/
+
 src/sites/
 src/sites.bak/
-src/fonts/
-sumn.tmp/
-*DS_Store
-
-*.scssc
+~trash/

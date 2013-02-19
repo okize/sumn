@@ -7,18 +7,38 @@
 </head>
 <body>
 
-  <table id="micrositeListTable">
+  <h1>Active Microsites</h1>
+
+  <table id="micrositeListTable" class="table table-striped table-bordered">
   <thead>
-    <th>Site Name</th>
-    <th>Date</th>
+    <th><i class="icon-th"></i></th>
+    <th><i class="icon-star-empty"></i>&nbsp;Site Name</th>
+    <th><i class="icon-calendar"></i>&nbsp;Created</th>
+    <th><i class="icon-upload"></i>&nbsp;Releases</th>
+    <th><i class="icon-time"></i>&nbsp;Last Release</th>
+    <th>Local</th>
+    <th>PD</th>
     <th>Preview</th>
-    <th>Published</th>
+    <th><i class="icon-star"></i>&nbsp;Published</th>
   </thead>
+  <tbody>
+<!--     {{#each items}}
+<tr>{{agree_button}}</tr>
+{{/each}} -->
+  </tbody>
+  </table>
+
+  <h1>Retired Microsites</h1>
+
+  <table id="micrositeListTableRetired" class="table table-striped table-bordered retired">
   <tbody>
   </tbody>
   </table>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/tablesort/1.6.1/tablesort.min.js"></script>
   <script>
 
     $(document).on('ready', function() {
@@ -30,11 +50,44 @@
         });
       }
 
+      // moment.js lib
+      moment().format();
+
       var list = getMicrositeList();
       var arr = [];
-      var rows = '';
+      var rows = {
+        'sites': []
+      };
+      var rowsRetired = {
+        'sites': []
+      };
+      var rowsCount = 1;
+      var rowsRetiredCount = 1;
       var created;
       var ifEmbedded = '';
+      var data = {};
+      var rowHtml = '{{#sites}}' +
+                    '<tr>' +
+                    '<td>{{ num }}</td>' +
+                    '<td><a href="{{ localPath }}">{{ name }}</a></td>' +
+                    '<td>{{ createDate }}</td>' +
+                    '<td class="releases">{{ releases }}</td>' +
+                    '<td>{{ lastRelease }}</td>' +
+                    '<td class="localSite"><a href="{{ localPath }}"><i class="icon-edit"></i></a></td>' +
+                    '<td class="pdSite"><a href="{{ pdPath }}"><i class="icon-share"></i></a></td>' +
+                    '<td class="previewSite"><a href="{{ previewPath }}"><i class="icon-check"></i></a></td>' +
+                    '<td><a href="{{ sitePath }}">{{ sitePath }}</a></td>' +
+                    '</tr>' +
+                    '{{/sites}}';
+      var template = Handlebars.compile(rowHtml);
+
+      var getRowCount = function (type) {
+        if (type === 'published') {
+          return rowsCount;
+        } else if (type === 'retired') {
+          return rowsRetiredCount;
+        }
+      }
 
       list.done(function (items) {
 
@@ -43,25 +96,73 @@
           arr.push(site);
         }
 
+        // sort array on alpha site name
+        arr.sort();
+
+        var buildRows = function (type, i) {
+
+          ifEmbedded = (items[ arr[i] ].isEmbedded) ? 'embedded.html' : '';
+
+          data = {
+            num: getRowCount(type),
+            name: arr[i],
+            createDate: moment( new Date(items[ arr[i] ].added) ).format('YYYY.MM.DD'),
+            releases: items[ arr[i] ].releases.count,
+            lastRelease: moment( items[ arr[i] ].releases.last ).fromNow(),
+            localPath: '/sites/' + items[ arr[i] ].foldername + '/' + ifEmbedded,
+            pdPath: 'http://productdevelopment.techtarget.com/microsites/media.techtarget.com/' + items[ arr[i] ].foldername + '/' + ifEmbedded,
+            previewPath: items[ arr[i] ].urlPreview,
+            sitePath: items[ arr[i] ].url
+          };
+
+          if (type === 'published') {
+            rows.sites.push(data);
+            rowsCount++;
+          } else if (type === 'retired') {
+            rowsRetired.sites.push(data);
+            rowsRetiredCount++;
+          }
+
+        };
+
         // iterrate through json and build table rows
         for (var i = 0, len = arr.length; i < len; i++) {
-          ifEmbedded = (items[ arr[i] ].isEmbedded) ? 'embedded.html' : 'index.html';
-          created = new Date(items[ arr[i] ].added);
-          rows += '<tr>'
-          rows += '<td><a href="/sites/' + items[ arr[i] ].foldername + '/' + ifEmbedded + '">' + arr[i] + '</a></td>';
-          rows += '<td>' + created.getFullYear() + '-' + (created.getMonth() + 1) + '-' + (created.getDate() + 1) + '</td>';
-          rows += '<td><a href="' + items[ arr[i] ].urlPreview + '">' + items[ arr[i] ].urlPreview + '</a></td>';
-          rows += '<td><a href="' + items[ arr[i] ].url + '">' + items[ arr[i] ].url + '</a></td>';
-          rows += '</tr>';
+
+          // filter out "inactive" sites
+          if (items[ arr[i] ].isActive) {
+            buildRows('published', i);
+          } else {
+            buildRows('retired', i);
+          }
+
         }
 
-        $('#micrositeListTable').append(rows);
+        // append row template
+        $('#micrositeListTable').append( template(rows) );
+
+        // clone table head & append row template
+        $('#micrositeListTableRetired').append( $('#micrositeListTable thead').clone() ).append( template(rowsRetired) );
+
+        // open links in new window
+        $('#micrositeListTable, #micrositeListTableRetired').on('click', 'td', function (e) {
+          e.preventDefault();
+          var href = $(this).children('a').attr('href');
+          if (typeof href !== 'undefined') {
+            window.open( href );
+          }
+        });
 
       });
 
+    var bar = moment('2012.10.21').format('X')*1000;
+    console.log(bar);
+    console.log( moment( bar ).format('YYYY.MM.DD') );
     });
 
   </script>
-
+  <script>
+    new Tablesort(document.getElementById('micrositeListTable'));
+    new Tablesort(document.getElementById('micrositeListTableRetired'));
+  </script>
 </body>
 </html>

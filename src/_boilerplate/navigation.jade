@@ -1,9 +1,9 @@
-- var pages = [{name: 'Link1', filename: 'index.html'}, {name: 'Link2', filename: 'index2.html'}, {name: 'Link3', filename: 'index3.html'}]
+- var pages = [{name: 'Home', filename: 'index.html'}, {name: 'ReplaceMe', filename: 'replaceMe'}, {name: 'ReplaceMe', filename: 'replaceMe'}, {name: 'ReplaceMe', filename: 'replaceMe'}]
 
 #micrositeHeaderNavigation
   ul
-  for page in pages
-    if page.name === thisPage
-      li.on: a(href='#{page.filename}') #{page.name}
-    else
-      li: a(href='#{page.filename}') #{page.name}
+    for page in pages
+      if page.name === thisPage
+        li.on: a(href='#{page.filename}') #{page.name}
+      else
+        li: a(href='#{page.filename}') #{page.name}
