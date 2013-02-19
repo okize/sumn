@@ -7,6 +7,8 @@
 	"predef": {
 		"alert": true,
 		"console": true,
+    "define": true,
+    "require": true,
     "purge_exec": true
 	},
 
