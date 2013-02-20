@@ -16,7 +16,6 @@ install:
 
 update:
 	@echo "Updating ${PROJECT}..."
-	git pull
 	npm update
 
 test:
