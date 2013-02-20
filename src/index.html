@@ -2,35 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ENG microsites on local</title>
+  <title>Microsites on local</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Active Microsites</h1>
-
-  <table id="micrositeListTable" class="table table-striped table-bordered">
+  <table id="micrositeListTable" class="table table-striped table-bordered micrositeTable">
+  <caption>Microsites</caption>
   <thead>
+    <tr>
     <th><i class="icon-th"></i></th>
     <th><i class="icon-star-empty"></i>&nbsp;Site Name</th>
     <th><i class="icon-calendar"></i>&nbsp;Created</th>
-    <!-- git add <th><i class="icon-upload"></i>&nbsp;Releases</th>
+    <!-- <th><i class="icon-upload"></i>&nbsp;Releases</th>
     <th><i class="icon-time"></i>&nbsp;Last Release</th> -->
     <th>Local</th>
     <th>PD</th>
     <th>Preview</th>
     <th><i class="icon-star"></i>&nbsp;Published</th>
+    <tr>
   </thead>
-  <tbody>
-<!--     {{#each items}}
-<tr>{{agree_button}}</tr>
-{{/each}} -->
-  </tbody>
-  </table>
-
-  <h1>Retired Microsites</h1>
-
-  <table id="micrositeListTableRetired" class="table table-striped table-bordered retired">
+  <tfoot>
+    <tr>
+    <td class="micrositeTableFooterCpation" colspan="99">Retired microsites</td>
+    </tr>
+  </tfoot>
   <tbody>
   </tbody>
   </table>
@@ -138,10 +134,9 @@
         }
 
         // append row template
-        $('#micrositeListTable').append( template(rows) );
-
-        // clone table head & append row template
-        $('#micrositeListTableRetired').append( $('#micrositeListTable thead').clone() ).append( template(rowsRetired) );
+        var table = $('#micrositeListTable');
+        table.find('tbody').append( template(rows) );
+        table.find('tfoot').append( template(rowsRetired) );
 
         // open links in new window
         $('#micrositeListTable, #micrositeListTableRetired').on('click', 'td', function (e) {
@@ -156,10 +151,10 @@
 
     });
 
-  </script>
-  <script>
+    // table sorting
     new Tablesort(document.getElementById('micrositeListTable'));
     new Tablesort(document.getElementById('micrositeListTableRetired'));
   </script>
+
 </body>
 </html>

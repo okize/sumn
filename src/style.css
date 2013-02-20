@@ -1549,10 +1549,15 @@ table th[class*="span"],
   background-position: -456px -144px;
 }
 
-h1 { margin: 25px auto; width: 400px; text-align: center; }
+
+.micrositeTable caption { font-size: 26px; font-weight: bold; margin: 0 0 20px; text-align: center; }
+.micrositeTableFooterCpation { color: #999; font-size: 16px; font-weight: bold; text-align: center !important; }
+.micrositeTable tfoot { background-color: #ccc; }
+
 
 #micrositeListTable, #micrositeListTableRetired {
-  width: 1400px; margin: 25px auto;
+  width: 95%;
+  margin: 25px auto;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.075);
 }
 
