@@ -49,20 +49,16 @@
       // moment.js lib
       moment().format();
 
-      var list = getMicrositeList();
-      var arr = [];
-      var rows = {
-        'sites': []
-      };
-      var rowsRetired = {
-        'sites': []
-      };
-      var rowsCount = 1;
-      var rowsRetiredCount = 1;
-      var created;
-      var ifEmbedded = '';
-      var data = {};
-      var rowHtml = '{{#sites}}' +
+      var list = getMicrositeList(),
+          arr = [],
+          rows = { 'sites': []},
+          rowsRetired = { 'sites': []},
+          rowsCount = 1,
+          rowsRetiredCount = 1,
+          created,
+          ifEmbedded = '',
+          data = {},
+          rowHtml = '{{#sites}}' +
                     '<tr>' +
                     '<td>{{ num }}</td>' +
                     '<td><a href="{{ localPath }}">{{ name }}</a></td>' +
@@ -74,8 +70,8 @@
                     '<td class="previewSite"><a href="{{ previewPath }}"><i class="icon-check"></i></a></td>' +
                     '<td><a href="{{ sitePath }}">{{ sitePath }}</a></td>' +
                     '</tr>' +
-                    '{{/sites}}';
-      var template = Handlebars.compile(rowHtml);
+                    '{{/sites}}',
+          template = Handlebars.compile(rowHtml);
 
       var getRowCount = function (type) {
         if (type === 'published') {
@@ -135,8 +131,12 @@
 
         // append row template
         var table = $('#micrositeListTable');
-        table.find('tbody').append( template(rows) );
-        table.find('tfoot').append( template(rowsRetired) );
+        table
+          .find('tbody')
+          .append( template(rows) )
+          .end()
+          .find('tfoot')
+          .append( template(rowsRetired) );
 
         // open links in new window
         $('#micrositeListTable, #micrositeListTableRetired').on('click', 'td', function (e) {
@@ -154,6 +154,7 @@
     // table sorting
     new Tablesort(document.getElementById('micrositeListTable'));
     new Tablesort(document.getElementById('micrositeListTableRetired'));
+
   </script>
 
 </body>
