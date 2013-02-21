@@ -9,13 +9,15 @@ var _program = require('commander'); // https://github.com/visionmedia/commander
 
 _program
   .version('0.0.4')
-  .option('-l, --list', 'generate a list of all "published" microsites');
+  .option('-l, --list', 'generate a list of all "published" microsites')
+  .option('-r, --retired', 'generate a list of all "retired" microsites');
 
 _program
   .command('create [sitename]')
   .description('> create a new microsite')
-  .action(function(sitename) {
-    sumn.createSite(sitename);
+  .option('-d, --directory [dirname]', 'Name of the directory containing new site')
+  .action(function(sitename, options) {
+    sumn.createSite(sitename, options.directory);
   });
 
 _program
@@ -49,14 +51,19 @@ _program
 
 _program.parse(process.argv);
 
-// @todo fix this mess
 if (!_program.args.length) {
 
   if (_program.list) {
 
-    // display list of active microsites
     sumn.getListOfSites({
       listType: 'active',
+      toConsole: true
+    });
+
+  }  else if (_program.retired) {
+
+    sumn.getListOfSites({
+      listType: 'retired',
       toConsole: true
     });
 

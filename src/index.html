@@ -31,10 +31,10 @@
   </tbody>
   </table>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/tablesort/1.6.1/tablesort.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/tablesort/1.6.1/tablesort.min.js"></script>
   <script>
 
     $(document).on('ready', function() {
@@ -98,11 +98,11 @@
           data = {
             num: getRowCount(type),
             name: arr[i],
-            createDate: moment( new Date(items[ arr[i] ].added) ).format('YYYY.MM.DD'),
+            createDate: moment( new Date(items[ arr[i] ].createDate) ).format('YYYY.MM.DD'),
             releases: items[ arr[i] ].releases.count,
             lastRelease: moment( items[ arr[i] ].releases.last ).fromNow(),
-            localPath: '/sites/' + items[ arr[i] ].foldername + '/' + ifEmbedded,
-            pdPath: 'http://productdevelopment.techtarget.com/microsites/media.techtarget.com/' + items[ arr[i] ].foldername + '/' + ifEmbedded,
+            localPath: '/sites/' + items[ arr[i] ].siteDirectory + '/' + ifEmbedded,
+            pdPath: 'http://productdevelopment.techtarget.com/microsites/media.techtarget.com/' + items[ arr[i] ].siteDirectory + '/' + ifEmbedded,
             previewPath: items[ arr[i] ].urlPreview,
             sitePath: items[ arr[i] ].url
           };
