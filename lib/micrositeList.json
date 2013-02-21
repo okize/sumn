@@ -1,11 +1,71 @@
 {
   "sites": {
+    "HPConverge": {
+      "createDate": 1326430800000,
+      "isActive": false,
+      "siteDirectory": "hp",
+      "isEmbedded": false,
+      "url": "http://convergedinfrastructure.com",
+      "urlPreview": "http://preview.techtarget.com/HPConverge",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
+    "Brocade": {
+      "createDate": 1330578000000,
+      "isActive": false,
+      "siteDirectory": "brocade",
+      "isEmbedded": true,
+      "url": "http://SearchDataCenter.com/BrocadeDataCenter",
+      "urlPreview": "http://preview.techtarget.com:8080/Brocade",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
+    "MicroscopeACES": {
+      "createDate": 1331524800000,
+      "isActive": false,
+      "siteDirectory": "microscopeaces",
+      "isEmbedded": false,
+      "url": "http://microscopeacesawards.co.uk",
+      "urlPreview": "http://preview.techtarget.com:8080/MicroscopeACES",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
+    "Dell12g": {
+      "createDate": 1331784000000,
+      "isActive": false,
+      "siteDirectory": "dell12g",
+      "isEmbedded": false,
+      "url": "http://DellInnovates.com",
+      "urlPreview": "http://preview.techtarget.com:8080/Dell12g",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
+    "APCDataCenter": {
+      "createDate": 1338350400000,
+      "isActive": false,
+      "siteDirectory": "apcdatacenterpowerzone",
+      "isEmbedded": true,
+      "url": "http://preview.techtarget.com/APCDataCenter",
+      "urlPreview": "http://searchEnterpriseDesktop.com/APCPowerandProtection",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
     "HPServicesEMEA": {
       "createDate": 1335240000000,
       "isActive": false,
       "siteDirectory": "hpservicesemea",
       "isEmbedded": false,
-      "url": "http://hp-applications.com",
+      "url": "http://hpglobalservices.com",
       "urlPreview": "http://preview.techtarget.com:8080/HPServicesEMEA",
       "releases": {
         "count": 0,
@@ -85,7 +145,7 @@
       }
     },
     "VirtualizationManagementCenter": {
-      "isActive": true,
+      "isActive": false,
       "createDate": 1339205189453,
       "siteDirectory": "virtualizationmanagementcenter",
       "isEmbedded": false,

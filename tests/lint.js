@@ -7,7 +7,7 @@ var getJsFiles = function () {
     './lib/app.js',
     './lib/micrositeList.json',
     './lib/modules/cli.js',
-    // './lib/modules/files.js',
+    './lib/modules/files.js',
     './lib/modules/messaging.js',
     './lib/modules/purgeCdn.js',
     './lib/modules/sites.js'

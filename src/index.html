@@ -37,6 +37,9 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/tablesort/1.6.1/tablesort.min.js"></script>
   <script>
 
+    // table sorting
+    new Tablesort(document.getElementById('micrositeListTable'));
+
     $(document).on('ready', function() {
 
       // for now using a symlink to actual json file...
@@ -60,9 +63,9 @@
           data = {},
           rowHtml = '{{#sites}}' +
                     '<tr>' +
-                    '<td>{{ num }}</td>' +
+                    '<td class="count">{{ num }}</td>' +
                     '<td><a href="{{ localPath }}">{{ name }}</a></td>' +
-                    '<td>{{ createDate }}</td>' +
+                    '<td class="createDate">{{ createDate }}</td>' +
                     // '<td class="releases">{{ releases }}</td>' +
                     // '<td>{{ lastRelease }}</td>' +
                     '<td class="localSite"><a href="{{ localPath }}"><i class="icon-edit"></i></a></td>' +
@@ -98,7 +101,7 @@
           data = {
             num: getRowCount(type),
             name: arr[i],
-            createDate: moment( new Date(items[ arr[i] ].createDate) ).format('YYYY.MM.DD'),
+            createDate: moment( new Date(items[ arr[i] ].createDate) ).format('YYYY / MM / DD'),
             releases: items[ arr[i] ].releases.count,
             lastRelease: moment( items[ arr[i] ].releases.last ).fromNow(),
             localPath: '/sites/' + items[ arr[i] ].siteDirectory + '/' + ifEmbedded,
@@ -139,7 +142,7 @@
           .append( template(rowsRetired) );
 
         // open links in new window
-        $('#micrositeListTable, #micrositeListTableRetired').on('click', 'td', function (e) {
+        $('#micrositeListTable').on('click', 'td', function (e) {
           e.preventDefault();
           var href = $(this).children('a').attr('href');
           if (typeof href !== 'undefined') {
@@ -150,11 +153,6 @@
       });
 
     });
-
-    // table sorting
-    new Tablesort(document.getElementById('micrositeListTable'));
-    new Tablesort(document.getElementById('micrositeListTableRetired'));
-
   </script>
 
 </body>

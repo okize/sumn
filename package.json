@@ -6,16 +6,15 @@
   "dependencies": {
     "jade": "~0.28",
     "requirejs": "~2.0",
-    "cli-color": "~0.2",
-    "commander": "~0.5",
-    "jsftp": "~0.5",
+    "cli-color": "0.2.x",
+    "commander": "1.1.x",
+    "jsftp": "0.5.x",
     "open": "0.0.x",
-    "prompt": "~0.2",
     "underscore": "~1.4",
     "wrench": "~1.3"
   },
   "devDependencies": {
-    "jshint": "~1.0",
+    "jshint": "0.9.1",
     "mocha": "1.5.x"
   },
   "repository": {
@@ -26,9 +25,9 @@
     "url": "https://github.com/okize/sumn/issues"
   },
   "bin": {
-    "sumn": "./sumn.js"
+    "sumn": "./bin/sumn.js"
   },
-  "main": "./sumn.js",
+  "main": "./bin/sumn.js",
   "engine": {
     "node": "0.8.x",
     "npm": "1.1.x"

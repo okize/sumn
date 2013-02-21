@@ -1554,22 +1554,21 @@ table th[class*="span"],
 .micrositeTableFooterCpation { color: #999; font-size: 16px; font-weight: bold; text-align: center !important; }
 .micrositeTable tfoot { background-color: #ccc; }
 
-
-#micrositeListTable, #micrositeListTableRetired {
+#micrositeListTable {
   width: 95%;
   margin: 25px auto;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.075);
 }
 
-#micrositeListTable tr:hover td, #micrositeListTableRetired tr:hover td {
+#micrositeListTable tr:hover td {
   background-color: #eee !important;
 }
 
-#micrositeListTable th, #micrositeListTableRetired th {
+#micrositeListTable th {
+  cursor: pointer;
   text-align: center;
 }
 
-#micrositeListTableRetired thead { background-color: #ccc; }
-
-td.pdSite, td.previewSite, td.localSite { text-align: center; width: 50px; }
+td.pdSite, td.previewSite, td.localSite, td.count { text-align: center; width: 40px; }
 td.releases { text-align: center; width: 80px; }
+td.createDate { text-align: center; width: 100px; }
