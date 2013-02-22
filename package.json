@@ -3,6 +3,7 @@
   "name": "sumn",
   "version": "0.0.4",
   "description": "Start Up a Microsite Now - a command-line tool for microsite front-end management.",
+  "private": true,
   "dependencies": {
     "jade": "~0.28",
     "requirejs": "~2.0",
