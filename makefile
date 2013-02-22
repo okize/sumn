@@ -17,10 +17,3 @@ install:
 update:
 	@echo "Updating ${PROJECT}..."
 	npm update
-
-test:
-	@/bin/echo -n  "Linting javascript..."
-	@echo "\n"
-	@node ./tests/lint.js
-	@echo ""
-	@echo "Done!"

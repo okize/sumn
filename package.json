@@ -3,11 +3,13 @@
   "name": "sumn",
   "version": "0.0.4",
   "description": "Start Up a Microsite Now - a command-line tool for microsite front-end management.",
+  "private": true,
   "dependencies": {
     "jade": "~0.28",
     "requirejs": "~2.0",
     "cli-color": "0.2.x",
     "commander": "1.1.x",
+    "ftp": "0.2.x",
     "jsftp": "0.5.x",
     "open": "0.0.x",
     "underscore": "~1.4",
@@ -31,6 +33,9 @@
   "engine": {
     "node": "0.8.x",
     "npm": "1.1.x"
+  },
+  "scripts": {
+    "test": "node ./tests/lint.js"
   },
   "licenses": [{
     "type": "MIT",

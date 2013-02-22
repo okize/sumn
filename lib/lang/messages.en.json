@@ -7,17 +7,21 @@
     "countRetiredSites": "%j retired sites:",
     "buildingSiteStart": "now building site assets for %j",
     "propertyUpdated": "the %j property has been updated",
-    "cdnPurge": "purging following files on CDN:\n %j",
+    "cdnPurgeStart": "purging following files on CDN:\n \n %j\n",
+    "cdnPurgeEnd": "CDN purge complete\n",
     "siteCreated": "%j has been created",
     "siteRetired": " has been retired",
-    "ftpFinished": "FTP session finished"
+    "ftpFinished": "FTP session finished",
+    "ftpStarted": "FTP session started on %j"
   },
 
   "error": {
     "genericError": "%j",
+    "ftpError": "could not connect to %j \nare you on the network?",
     "argumentsMissing": "arguments for %j missing",
     "notValidProperty": "%j is not a valid property",
     "needSitename": "please enter a name for the new microsite",
+    "dirNotBuilt": "the %j directory hasn't been built",
     "dirAlreadyExists": "that directory already exists, choose another",
     "siteAlreadyExists": "a microsite by that name already exists, please try again with a different name",
     "siteDoesNotExist": "there is no record of a microsite named %j",
