@@ -18,6 +18,7 @@
     "argumentsMissing": "arguments for %j missing",
     "notValidProperty": "%j is not a valid property",
     "needSitename": "please enter a name for the new microsite",
+    "dirNotBuilt": "the %j directory hasn't been built",
     "dirAlreadyExists": "that directory already exists, choose another",
     "siteAlreadyExists": "a microsite by that name already exists, please try again with a different name",
     "siteDoesNotExist": "there is no record of a microsite named %j",
