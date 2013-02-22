@@ -1,0 +1,39 @@
+{
+
+  "info": {
+    "genericMessage": "%j",
+    "countTotalSites": "%j sites in total:",
+    "countActiveSites": "%j active sites:",
+    "countRetiredSites": "%j retired sites:",
+    "buildingSiteStart": "now building site assets for %j",
+    "propertyUpdated": "the %j property has been updated",
+    "cdnPurge": "purging following files on CDN:\n %j",
+    "siteCreated": "%j has been created",
+    "siteRetired": " has been retired",
+    "ftpFinished": "FTP session finished"
+  },
+
+  "error": {
+    "genericError": "%j",
+    "argumentsMissing": "arguments for %j missing",
+    "notValidProperty": "%j is not a valid property",
+    "needSitename": "please enter a name for the new microsite",
+    "dirAlreadyExists": "that directory already exists, choose another",
+    "siteAlreadyExists": "a microsite by that name already exists, please try again with a different name",
+    "siteDoesNotExist": "there is no record of a microsite named %j",
+    "noEnvSpecified": "which environment do you want to release to? please use the -e flag to specify an environment",
+    "incorrectEnvSpecified": "environment must be eng, qa or prod",
+    "cdnPurgeNoUrls": "there are no files built for %j",
+    "siteAlreadyRetired": "%j has already been retired",
+    "noTypeSites": "there are no %j sites"
+  },
+
+  "warn": {
+    "dumb": "that is a dumb thing that you're trying to do"
+  },
+
+  "ask": {
+    "why": "why would you want to do that?"
+  }
+
+}

@@ -1,9 +1,9 @@
 config.json
 npm-debug.log
 node_modules/
-build/
+logs/
+src/build/
 src/_global/
-
 src/sites/
 src/sites.bak/
 ~trash/

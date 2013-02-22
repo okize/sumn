@@ -16,10 +16,11 @@ install:
 
 update:
 	@echo "Updating ${PROJECT}..."
-	git pull
 	npm update
 
 test:
-	@/bin/echo -n  "Linting javascript... "
-	@jshint ./sumn.js
-	@echo "${CHECK} Done!"
+	@/bin/echo -n  "Linting javascript..."
+	@echo "\n"
+	@node ./tests/lint.js
+	@echo ""
+	@echo "Done!"
