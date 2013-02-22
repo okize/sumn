@@ -1,19 +1,25 @@
 var fs = require('fs'),
-    jshint = require('jshint').JSHINT;
+    jshint = require('jshint').JSHINT,
+    wrench = require('wrench'),
+    _ = require('underscore');
 
 var getJsFiles = function () {
 
-  var js = [
-    './lib/app.js',
-    './lib/micrositeList.json',
-    './lib/modules/cli.js',
-    './lib/modules/files.js',
-    './lib/modules/messaging.js',
-    './lib/modules/purgeCdn.js',
-    './lib/modules/sites.js'
-  ];
+  // array of all the files in the build directory
+  var files = wrench.readdirSyncRecursive('./lib');
 
-  return js;
+  // filter out of files array anything that doesn't end with 'css, js, png, gif, jpg, jpeg'
+  var regexp = /(.*.(js|json))/gi;
+  files = _.filter(files, function (file) {
+    return file.match(regexp);
+  });
+
+  // add in rest of path name
+  files = _.map(files, function (file) {
+    return './lib/' + file;
+  });
+
+  return files;
 
 };
 
