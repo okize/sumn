@@ -25,7 +25,7 @@
     "dirAlreadyExists": "el directorio ya existe, escoje otro",
     "siteAlreadyExists": "un sitio con este nombre ya existe, intenta otro nombre",
     "siteDoesNotExist": "no hay un registro de un sitio con el nombre de %j",
-    "noEnvSpecified": "¿en cuál entorno quieres liberar? para especificar el entorno usa la marca '-e'",
+    "noEnvSpecified": "¿en cuál entorno quieres liberar estos archivos? para especificar el entorno usa la marca '-e'",
     "incorrectEnvSpecified": "entorno tiene que ser eng, qa o prod",
     "cdnPurgeNoUrls": "no hay archivos creado por %j",
     "siteAlreadyRetired": "%j ya ha estado retirado",
