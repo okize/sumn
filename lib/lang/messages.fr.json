@@ -1,15 +1,43 @@
 {
 
-  "error": {
+  "info": {
+    "genericMessage": "%j",
+    "countTotalSites": "%j des sites web au total:",
+    "countActiveSites": "%j des sites web actifs:",
+    "countRetiredSites": "%j sites web de la retraite:",
+    "buildingSiteStart": "en train de construire actifs du site web pour %j",
+    "propertyUpdated": "la propriété %j a été mis à jour",
+    "cdnPurgeStart": "purge des fichiers suivants sur CDN:\n \n %j\n",
+    "cdnPurgeEnd": "CDN purge complète\n",
+    "siteCreated": "%j a été créé",
+    "siteRetired": " a pris sa retraite",
+    "ftpFinished": "la session FTP fini",
+    "ftpStarted": "la session FTP a débuté le %j"
   },
 
-  "info": {
+  "error": {
+    "genericError": "%j",
+    "ftpError": "ouvait pas se connecter à %j \nnare vous sur le réseau?",
+    "argumentsMissing": "Les arguments pour %j manquant",
+    "notValidProperty": "%j n'est pas une propriété valide",
+    "needSitename": "entrer un nom pour le nouveau site web",
+    "dirNotBuilt": "le répertoire %j n'a pas été créée",
+    "dirAlreadyExists": "ce répertoire existe déjà, choisissez un autre nom",
+    "siteAlreadyExists": "un site web de ce nom existe déjà, choisissez un autre nom",
+    "siteDoesNotExist": "il n'y a aucune trace d'un site web appelé %j",
+    "noEnvSpecified": "auquel l'environnement voulez-vous sortir? utiliser le drapeau de '-e' de spécifier un environnement",
+    "incorrectEnvSpecified": "l'environnement doit être eng, qa ou prod",
+    "cdnPurgeNoUrls": "il n'y a pas les fichiers créés pour %j",
+    "siteAlreadyRetired": "%j a déjà été à la retraite",
+    "noTypeSites": "il n'y a pas des sites web %j"
   },
 
   "warn": {
+    "dumb": "ne ceci faites pas"
   },
 
   "ask": {
+    "why": "ourquoi vous ceci faites?"
   }
 
 }
