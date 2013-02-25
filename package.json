@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "jshint": "0.9.1",
+    "volo": "0.2.x",
     "mocha": "1.5.x"
   },
   "repository": {
