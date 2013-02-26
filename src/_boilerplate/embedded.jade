@@ -8,6 +8,9 @@ html(lang='en', dir='ltr')
     link#stylesheetGlobal(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/global.css', media='screen')
     link#stylesheetSiteSpecific(rel='stylesheet', type='text/css', href='http://media.ttgtmedia.com/rms/ux/css/searchsqlserver_new.css', media='screen')
     script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    link(rel='stylesheet', href='css/style.css', type='text/css', media='screen')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(src='javascript/script.js')
     // this needs to be here in order to avoid uncaught reference errors in console
     script(type='text/javascript')
       var microsite = '#{site.name}';
@@ -74,7 +77,7 @@ html(lang='en', dir='ltr')
           #micrositeClose
             a(href='http://searchdatamanagement.techtarget.com') Close
         // END: embedded microsite
-        include main
+        block content
     #footer
       #footerNavigation
         #footerNavigationCompress

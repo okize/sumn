@@ -1,0 +1,12 @@
+{
+    "globals": {
+        "console": true,
+        "Handlebars": true,
+        "moment": true
+    },
+    "strict": true,
+    "browser" : true,
+    "jquery": true,
+    "node" : false,
+    "es5" : true
+}

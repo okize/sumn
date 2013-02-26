@@ -1,7 +1,9 @@
 // table sorting
-new Tablesort(document.getElementById('micrositeListTable'));
+// new Tablesort(document.getElementById('micrositeListTable'));
 
 $(document).on('ready', function() {
+
+  'use strict';
 
   // for now using a symlink to actual json file...
   function getMicrositeList( ) {
@@ -43,7 +45,7 @@ $(document).on('ready', function() {
     } else if (type === 'retired') {
       return rowsRetiredCount;
     }
-  }
+  };
 
   list.done(function (items) {
 
