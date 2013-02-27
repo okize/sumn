@@ -16,4 +16,4 @@ install:
 
 update:
 	@echo "Updating ${PROJECT}..."
-	npm update
+	npm install

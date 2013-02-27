@@ -4,6 +4,7 @@ node_modules/
 logs/
 src/build/
 src/sites/
+src/sites.bak/
 docs/temp/
 docs/temp2/
 ~trash/
