@@ -1100,7 +1100,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("glyphicons-halflings.png");
+  background-image: url("../images/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -1555,20 +1555,17 @@ table th[class*="span"],
 .micrositeTable tfoot { background-color: #ccc; }
 
 #micrositeListTable {
-  width: 95%;
+  width: 85%;
   margin: 25px auto;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.075);
 }
 
-#micrositeListTable tr:hover td {
-  background-color: #eee !important;
-}
+#micrositeListTable tr:hover td { background-color: #eee !important; }
+#micrositeListTable th { text-align: center; }
 
-#micrositeListTable th {
-  cursor: pointer;
-  text-align: center;
-}
-
-td.pdSite, td.previewSite, td.localSite, td.count { text-align: center; width: 40px; }
+td.pdSite, td.previewSite, td.localBuiltSite { text-align: center; width: 40px; }
+td.count { text-align: center; width: 20px; }
 td.releases { text-align: center; width: 80px; }
-td.createDate { text-align: center; width: 100px; }
+td.createDate { text-align: center; min-width: 80px; width: 80px; }
+td.localDevSite { max-width: 280px; width: 280px;  }
+td.localDevSite, td.pdSite, td.previewSite, td.localBuiltSite, td.publishedSite { cursor: pointer; }

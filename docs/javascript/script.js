@@ -5,9 +5,9 @@ $(document).on('ready', function() {
 
   'use strict';
 
-  // for now using a symlink to actual json file...
+  // for now using a json file generated from the micrositeList.json file in lib
   function getMicrositeList( ) {
-    return $.getJSON('micrositeListClone.json').pipe(function (data) {
+    return $.getJSON('javascript/microsites.json').pipe(function (data) {
       return data.sites;
     });
   }
@@ -27,14 +27,14 @@ $(document).on('ready', function() {
       rowHtml = '{{#sites}}' +
                 '<tr>' +
                 '<td class="count">{{ num }}</td>' +
-                '<td><a href="{{ localEngPath }}">{{ name }}</a></td>' +
+                '<td class="localDevSite"><a href="{{ localEngPath }}">{{ name }}</a></td>' +
                 '<td class="createDate">{{ createDate }}</td>' +
                 // '<td class="releases">{{ releases }}</td>' +
                 // '<td>{{ lastRelease }}</td>' +
-                '<td class="localSite"><a href="{{ localProdPath }}"><i class="icon-edit"></i></a></td>' +
+                '<td class="localBuiltSite"><a href="{{ localProdPath }}"><i class="icon-edit"></i></a></td>' +
                 '<td class="pdSite"><a href="{{ pdPath }}"><i class="icon-share"></i></a></td>' +
                 '<td class="previewSite"><a href="{{ previewPath }}"><i class="icon-check"></i></a></td>' +
-                '<td><a href="{{ sitePath }}">{{ sitePath }}</a></td>' +
+                '<td class="publishedSite"><a href="{{ sitePath }}">{{ sitePath }}</a></td>' +
                 '</tr>' +
                 '{{/sites}}',
       template = Handlebars.compile(rowHtml);
@@ -64,7 +64,7 @@ $(document).on('ready', function() {
       data = {
         num: getRowCount(type),
         name: arr[i],
-        createDate: moment( new Date(items[ arr[i] ].createDate) ).format('YYYY / MM / DD'),
+        createDate: moment( new Date(items[ arr[i] ].createDate) ).format('YYYY-MM-DD'),
         releases: items[ arr[i] ].releases.count,
         lastRelease: moment( items[ arr[i] ].releases.last ).fromNow(),
         localEngPath: 'http://microsites.eng.techtarget.com/' + items[ arr[i] ].siteDirectory + '/' + ifEmbedded,
