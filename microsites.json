@@ -335,6 +335,18 @@
         "count": 10,
         "last": 0
       }
+    },
+    "NewSiteForCustom": {
+      "isActive": true,
+      "createDate": 1362720285485,
+      "siteDirectory": "newsiteforcustom",
+      "isEmbedded": false,
+      "url": "",
+      "urlPreview": "http://preview.techtarget.com:8080/NewSiteForCustom",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
     }
   }
 }
