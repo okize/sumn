@@ -335,6 +335,18 @@
         "count": 10,
         "last": 0
       }
+    },
+    "WorkdayCloudMicrosite": {
+      "isActive": true,
+      "createDate": 1363109006246,
+      "siteDirectory": "workdaycloudmicrosite",
+      "isEmbedded": true,
+      "url": "http://searchfinancialapplications.com/workday-builtfromthecloudup",
+      "urlPreview": "http://preview.techtarget.com:8080/workdaycloudmicrosite",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
     }
   }
 }
