@@ -3,6 +3,4 @@ npm-debug.log
 node_modules/
 logs/
 src/build/
-src/sites/_global/javascript/
-src/sites.bak/
 ~trash/

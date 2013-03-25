@@ -5,6 +5,7 @@
   "language": "en",
   "os": "",
   "browser": "",
+  "useLocalServers": false,
   "localDocumentationServer": "",
   "localDevelopmentServer": "",
   "localProductionServer": "",
@@ -19,5 +20,7 @@
     "mediaPath": "",
     "username": "",
     "password": ""
-  }
+  },
+  "sendEmailsOnRelease": true,
+  "releaseEmails": []
 }
