@@ -24,6 +24,7 @@ function (req, $) {
     /* addthis social share component */
     $('#micrositeHeader').addThisShare({
       addThisButtons: ['email', 'linkedin', 'facebook', 'twitter'],
+      addThisProfileID: 'ra-4f0c7ed813520536',
       googleAnalyticsId: window.SITE_gaAccountID || false
     });
 
