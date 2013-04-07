@@ -2,7 +2,7 @@
   "private": true,
   "name": "sumn",
   "version": "0.0.4",
-  "description": "Start Up a Microsite Now - a command-line tool for microsite front-end management.",
+  "description": "Start Up a Microsite Now - an app for rapid microsite development & deployment",
   "dependencies": {
     "jade": "~0.28",
     "requirejs": "2.1.x",
@@ -34,11 +34,10 @@
   },
   "main": "./bin/sumn.js",
   "engine": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": "0.10.x",
+    "npm": "1.2.x"
   },
   "scripts": {
-    "install": "volo add",
     "test": "node ./tests/lint.js"
   },
   "licenses": [

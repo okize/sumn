@@ -1,4 +1,4 @@
-/* last update: 2013-02-22 */
+/* last update: 2013-04-02 */
 $(document).ready(function ($) {
 
 	'use strict';
@@ -14,16 +14,50 @@ $(document).ready(function ($) {
     tabLocation: 'left'
   });
 
-  // create contact button and add to dom with click handler
-  var contactBtn = $('<a>', {
-    text: 'Contact HP',
-    'class': 'button',
-    href: 'http://www8.hp.com/us/en/contact-hp/contact.html'
-  })
-    .appendTo('.contentTabsNav')
-    .on('click', function(e) {
+  // returns a contact button that can be appended to the dom
+  var getContactButton = function(id) {
+
+    var lang = id.slice(12);
+
+    var buttonData = {
+
+      English: {
+        text: 'Contact HP',
+        url: 'http://www8.hp.com/us/en/contact-hp/contact.html'
+      },
+
+      Chinese: {
+        text: '联系方式 HP',
+        url: 'http://www8.hp.com/cn/zh/contact-hp/contact.html'
+      },
+
+      Japanese: {
+        text: 'お問い合わせ HP',
+        url: 'http://www8.hp.com/jp/ja/contact-hp/contact.html'
+      }
+
+    };
+
+    var button = $('<a>', {
+      'class': 'button',
+      text: buttonData[lang].text,
+      href: buttonData[lang].url
+    }).on('click', function(e) {
       e.preventDefault();
       window.open(this.href);
+    });
+
+    return button;
+
+  };
+
+  // append language-specific contact button
+  $('#contentTabs-English, #contentTabs-Chinese, #contentTabs-Japanese').each( function() {
+
+    $(this)
+      .find('.contentTabsNav')
+      .append( getContactButton(this.id) );
+
   });
 
   // init featured video component

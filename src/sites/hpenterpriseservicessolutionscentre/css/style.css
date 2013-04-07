@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6 { font-family: HPSimplifiedRegular, Arial, sans-serif; fo
 .contentTabsNav ul { margin: 0 !important; padding: 0 !important; background-color: #fff; list-style: none; }
 .contentTabsNav li { border-bottom: 1px solid #ccc; font-size: 13px; }
 .contentTabsNav li:hover { background-color: #d4e9f2; }
-.contentTabsNav li a { color: #000 !important; display: block; text-transform: uppercase; padding: 10px 7px; max-height: 40px; }
+.contentTabsNav li a { font-family: 'HPSimplifiedBold'; color: #444 !important; display: block; text-transform: uppercase; padding: 10px 7px; max-height: 40px; }
 .contentTabsNav li a:hover { text-decoration: none !important; }
 .contentTabsNav li.active { background-color: #0099d8 !important; border-bottom: none; position: relative; }
 .contentTabsNav li.active a { color: #fff !important; }

@@ -7,6 +7,7 @@ CHECK=\033[32m✔\033[39m
 install:
 	@echo "Installing ${PROJECT}..."
 	@npm install
+	@volo add
 	@npm link
 	@mv -i ./lib/config.tmp.json ./lib/config.json
 	@echo "\n"

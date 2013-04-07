@@ -216,7 +216,7 @@ body { background-color: #f2f2f2; }
 .micrositeModuleFeaturedTabs > li a { height: 41px; width: 309px; position: relative; display: block; }
 
 
-.micrositeImageNoWrap { width: 440px; margin: 0 0 20px 20px; height: 195px; float: left; overflow: hidden; font-size: 12px; }
+.micrositeImageNoWrap { width: 440px; margin: 0 0 20px 20px; height: 210px; float: left; overflow: hidden; font-size: 12px; }
 .micrositeFeaturedImage { float: left; }
 .micrositeFeaturedInfo { margin-left: 105px; }
 
@@ -303,7 +303,7 @@ a.activeThumbnail { border: 5px solid #007dba !important; }
 
 
 
-.filmstripThumbnailText a.readmore, .micrositeSplashRecommended a.readmore {
+.filmstripThumbnailText a.readmore, .micrositeSplashRecommended a.readmore, .micrositeFeaturedInfo p a {
   color: #fff !important;
   width: auto;
   display: inline-block;
@@ -321,4 +321,8 @@ a.activeThumbnail { border: 5px solid #007dba !important; }
   -webkit-border-radius: 0 3px 0 3px;
   cursor: pointer;
   border: none;
+}
+
+.micrositeFeaturedInfo p {
+  margin-top: 10px !important;
 }
