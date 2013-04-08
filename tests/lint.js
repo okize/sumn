@@ -8,8 +8,8 @@ var getJsFiles = function () {
   // array of all the files in the build directory
   var files = wrench.readdirSyncRecursive('./lib');
 
-  // filter out of files array anything that doesn't end with 'css, js, png, gif, jpg, jpeg'
-  var regexp = /(.*.(js|json))/gi;
+  // filter out of files array anything that doesn't end with js or json
+  var regexp = /(.*\.(js|json))/gi;
   files = _.filter(files, function (file) {
     return file.match(regexp);
   });
@@ -56,3 +56,11 @@ for (var i = 0, len = files.length; i < len; i++) {
 }
 
 console.log('\n');
+
+
+/* regex testing list */
+// ./lib/lang/messages.fr.json
+// ./lib/modules/sites.js
+// ./lib/templates/releaseEmail/html.ejs
+// ./lib/foobar.css
+// ./lib/anotherFile.jse

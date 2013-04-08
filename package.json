@@ -1,18 +1,20 @@
 {
   "private": true,
   "name": "sumn",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Start Up a Microsite Now - an app for rapid microsite development & deployment",
   "dependencies": {
+    "underscore": "~1.4",
+    "wrench": "~1.3",
     "jade": "~0.28",
     "requirejs": "2.1.x",
     "cli-color": "0.2.x",
     "commander": "1.1.x",
+    "open": "0.0.x",
     "ftp": "0.2.x",
     "jsftp": "0.5.x",
-    "open": "0.0.x",
-    "underscore": "~1.4",
-    "wrench": "~1.3"
+    "nodemailer": "0.4.x",
+    "email-templates": "0.0.x"
   },
   "devDependencies": {
     "debug": "0.7.x",
@@ -33,8 +35,8 @@
     "sumn": "./bin/sumn.js"
   },
   "main": "./bin/sumn.js",
-  "engine": {
-    "node": "0.10.x",
+  "engines": {
+    "node": "0.8.x",
     "npm": "1.2.x"
   },
   "scripts": {
@@ -49,7 +51,7 @@
   "volo": {
     "baseUrl": "./src/sites/_global/javascript",
     "dependencies": {
-      "addThisShare": "github:okize/addThisShare/v1.0.6",
+      "addThisShare": "github:okize/addThisShare/v1.0.7",
       "contentMatrix": "github:okize/contentMatrix/v1.0.0",
       "contentNavigationCarousel": "github:okize/contentNavigationCarousel/v1.0.0",
       "contentTabs": "github:okize/contentTabs/v1.0.3",

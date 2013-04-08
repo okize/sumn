@@ -1,6 +1,6 @@
 //  modules
-var micrositeList = require('../lib/micrositeList.json'),
-    cfg = require('../lib/config.json'),
+var micrositeList = require(process.cwd() + '/lib/data/micrositeList.json'),
+    cfg = require(process.cwd() + '/lib/config/user.json'),
     fs = require('fs'),
     openBrowser = require('open');
 

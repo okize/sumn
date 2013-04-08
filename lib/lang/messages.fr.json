@@ -12,7 +12,9 @@
     "siteCreated": "%j a été créé",
     "siteRetired": " a pris sa retraite",
     "ftpFinished": "la session FTP fini",
-    "ftpStarted": "la session FTP a débuté le %j"
+    "ftpStarted": "la session FTP a débuté le %j",
+    "emailSending": "",
+    "emailSuccess": ""
   },
 
   "error": {
@@ -29,7 +31,9 @@
     "incorrectEnvSpecified": "l'environnement doit être eng, qa ou prod",
     "cdnPurgeNoUrls": "il n'y a pas les fichiers créés pour %j",
     "siteAlreadyRetired": "%j a déjà été à la retraite",
-    "noTypeSites": "il n'y a pas des sites web %j"
+    "noTypeSites": "il n'y a pas des sites web %j",
+    "emailFail": "",
+    "noReleaseNotes": ""
   },
 
   "warn": {

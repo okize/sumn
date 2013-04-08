@@ -7,12 +7,14 @@
     "countRetiredSites": "%j sitios web retirado: ",
     "buildingSiteStart": "está construyendo partes del sitios web %j ya",
     "propertyUpdated": "la propiedad de %j ha estado actualizado",
-    "cdnPurgeStart": "está purgando estos archivos en el CDN:\n \n %j\n",
+    "cdnPurgeStart": "está purgando estos archivos en el CDN:\n",
     "cdnPurgeEnd": "los archivos en el CDN han estado purgado \n",
     "siteCreated": "%j ha estado creado",
     "siteRetired": " ha estado retirado",
     "ftpFinished": "terminó la sesión de FTP",
-    "ftpStarted": "la sesión de FTP comenzó en %j"
+    "ftpStarted": "la sesión de FTP comenzó en %j",
+    "emailSending": "",
+    "emailSuccess": ""
   },
 
   "error": {
@@ -29,7 +31,9 @@
     "incorrectEnvSpecified": "entorno tiene que ser eng, qa o prod",
     "cdnPurgeNoUrls": "no hay archivos creado por %j",
     "siteAlreadyRetired": "%j ya ha estado retirado",
-    "noTypeSites": "no hay sitios de %j"
+    "noTypeSites": "no hay sitios de %j",
+    "emailFail": "",
+    "noReleaseNotes": ""
   },
 
   "warn": {

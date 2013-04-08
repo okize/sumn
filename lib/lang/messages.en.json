@@ -7,12 +7,14 @@
     "countRetiredSites": "%j retired sites:",
     "buildingSiteStart": "now building site assets for %j",
     "propertyUpdated": "the %j property has been updated",
-    "cdnPurgeStart": "purging following files on CDN:\n \n %j\n",
+    "cdnPurgeStart": "purging the following files on CDN:\n",
     "cdnPurgeEnd": "CDN purge complete\n",
     "siteCreated": "%j has been created",
     "siteRetired": " has been retired",
     "ftpFinished": "FTP session finished",
-    "ftpStarted": "FTP session started on %j"
+    "ftpStarted": "FTP session started on %j",
+    "emailSending": "emailing release notes...\n",
+    "emailSuccess": "email sent successfully:"
   },
 
   "error": {
@@ -21,7 +23,7 @@
     "argumentsMissing": "arguments for %j missing",
     "notValidProperty": "%j is not a valid property",
     "needSitename": "please enter a name for the new microsite",
-    "dirNotBuilt": "the %j directory hasn't been created",
+    "dirNotBuilt": "the %j directory hasn't been created, use 'sumn build'",
     "dirAlreadyExists": "that directory already exists, choose another",
     "siteAlreadyExists": "a microsite by that name already exists, try another name",
     "siteDoesNotExist": "there is no record of a microsite named %j",
@@ -29,7 +31,9 @@
     "incorrectEnvSpecified": "environment must be eng, qa or prod",
     "cdnPurgeNoUrls": "there are no files built for %j",
     "siteAlreadyRetired": "%j has already been retired",
-    "noTypeSites": "there are no %j sites"
+    "noTypeSites": "there are no %j sites",
+    "emailFail": "email was not sent!\n%j",
+    "noReleaseNotes": "please include 'release notes' via the -m flag"
   },
 
   "warn": {
