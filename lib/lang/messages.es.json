@@ -28,12 +28,13 @@
     "siteAlreadyExists": "un sitios web con este nombre ya existe, intenta otro nombre",
     "siteDoesNotExist": "no hay un registro de un sitios web con el nombre de %j",
     "noEnvSpecified": "¿en cuál entorno quieres liberar estos archivos? para especificar el entorno usa la marca '-e'",
-    "incorrectEnvSpecified": "entorno tiene que ser eng, qa o prod",
+    "invalidEnvSpecified": "entorno tiene que ser eng, qa o prod",
     "cdnPurgeNoUrls": "no hay archivos creado por %j",
     "siteAlreadyRetired": "%j ya ha estado retirado",
     "noTypeSites": "no hay sitios de %j",
     "emailFail": "",
-    "noReleaseNotes": ""
+    "noReleaseNotes": "",
+    "invalidAssetTypeSpecified": ""
   },
 
   "warn": {

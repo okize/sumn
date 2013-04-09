@@ -28,12 +28,13 @@
     "siteAlreadyExists": "a microsite by that name already exists, try another name",
     "siteDoesNotExist": "there is no record of a microsite named %j",
     "noEnvSpecified": "which environment do you want to release to? please use the -e flag to specify an environment",
-    "incorrectEnvSpecified": "environment must be eng, qa or prod",
+    "invalidEnvSpecified": "environment must be eng, qa or prod",
     "cdnPurgeNoUrls": "there are no files built for %j",
     "siteAlreadyRetired": "%j has already been retired",
     "noTypeSites": "there are no %j sites",
-    "emailFail": "email was not sent!\n%j",
-    "noReleaseNotes": "please include 'release notes' via the -m flag"
+    "emailFail": "something went wrong so the email was not sent\n%j",
+    "noReleaseNotes": "please include 'release notes' via the -m flag",
+    "invalidAssetTypeSpecified": "%j invalid asset types\nassets must be either 'javascript', 'css' and/or 'images' separated by commas"
   },
 
   "warn": {

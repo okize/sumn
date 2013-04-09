@@ -13,18 +13,16 @@ npm install
 
 ### NPM Modules used
 
-* jade
-* requirejs
-* cli-color // https://github.com/medikoo/cli-color
-* commander // https://github.com/visionmedia/commander.js
-* ftp
-* jsftp
-* open
-* nodemailer
-* underscore
-* wrench
-* nodemailer  // https://github.com/andris9/Nodemailer
-* node-email-templates // https://github.com/niftylettuce/node-email-templates
+* [underscore](https://github.com/documentcloud/underscore)
+* [jade](https://github.com/visionmedia/jade)
+* [requirejs](https://github.com/jrburke/requirejs)
+* [cli-color](https://github.com/medikoo/cli-color)
+* [commander](https://github.com/visionmedia/commander.js)
+* [jsftp](https://github.com/sergi/jsftpgem)
+* [open](https://github.com/pwnall/node-open)
+* [wrench](https://github.com/ryanmcgrath/wrench-js)
+* [nodemailer]( https://github.com/andris9/Nodemailer)
+* [node-email-templates]( https://github.com/niftylettuce/node-email-templates)
 
 ## Create a new microsite
 

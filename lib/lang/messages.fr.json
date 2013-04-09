@@ -28,12 +28,13 @@
     "siteAlreadyExists": "un site web de ce nom existe déjà, choisissez un autre nom",
     "siteDoesNotExist": "il n'y a aucune trace d'un site web appelé %j",
     "noEnvSpecified": "auquel l'environnement voulez-vous sortir? utiliser le drapeau de '-e' de spécifier un environnement",
-    "incorrectEnvSpecified": "l'environnement doit être eng, qa ou prod",
+    "invalidEnvSpecified": "l'environnement doit être eng, qa ou prod",
     "cdnPurgeNoUrls": "il n'y a pas les fichiers créés pour %j",
     "siteAlreadyRetired": "%j a déjà été à la retraite",
     "noTypeSites": "il n'y a pas des sites web %j",
     "emailFail": "",
-    "noReleaseNotes": ""
+    "noReleaseNotes": "",
+    "invalidAssetTypeSpecified": ""
   },
 
   "warn": {
