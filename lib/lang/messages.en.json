@@ -13,7 +13,7 @@
     "siteRetired": " has been retired",
     "ftpFinished": "FTP session finished",
     "ftpStarted": "FTP session started on %j",
-    "emailSending": "emailing release notes...\n",
+    "emailSending": "emailing release notes...",
     "emailSuccess": "email sent successfully:"
   },
 

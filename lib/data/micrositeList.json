@@ -347,6 +347,18 @@
         "count": 0,
         "last": 0
       }
+    },
+    "IBMServiceVirtualization": {
+      "isActive": true,
+      "createDate": 1365565607369,
+      "siteDirectory": "ibmservicevirtmicrosite",
+      "isEmbedded": true,
+      "url": "http://searchsoftwarequality.com/IBMServiceVirtualiztion",
+      "urlPreview": "http://preview.techtarget.com:8080/IBMServiceVirtualization",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
     }
   }
 }
