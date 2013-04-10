@@ -230,6 +230,7 @@ h1, h2, h3, h4, h5, h6 { font-family: HPSimplifiedBold, Arial, sans-serif; font-
 .micrositeCustomContainerRight { float: right; margin: 0 0 20px; }
 .micrositeMeboxContainer { background-color: #000; clear: both; min-height: 400px; padding: 15px 0; margin: 10px 0 0; }
 
+
 /* featured video player */
 .featuredVideo { clear: both; border: 1px solid #666; padding: 10px 0 10px 10px; margin: 0 0 25px; vertical-align: top; position: relative; *zoom: 1; }
 .featuredVideo:before, .featuredVideo:after { content: ' '; display: table; }
