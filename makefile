@@ -9,8 +9,8 @@ install:
 	@npm install
 	@volo add
 	@npm link
-	@mv -i ./lib/config.tmp.json ./lib/config.json
+	@mv -i ./lib/config/user.tmp.json ./lib/user.json
 	@echo "\n"
 	@echo "${CHECK} Installation complete!"
 	@echo "\n"
-	@echo "Now open './lib/config.json' and enter credentials"
+	@echo "Now open './lib/config/user.json' and enter credentials"

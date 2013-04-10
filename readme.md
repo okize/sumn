@@ -2,8 +2,30 @@
 
 Command-line tool for microsite front-end management.
 
-```makefile
-make install
+## Installation
+
+```
+git clone https://github.com/okize/sumn.git
+npm install
 ```
 
-Now open './lib/config.json' and enter credentials
+## Tech Stack
+
+### NPM Modules used
+
+* [underscore](https://github.com/documentcloud/underscore)
+* [jade](https://github.com/visionmedia/jade)
+* [requirejs](https://github.com/jrburke/requirejs)
+* [cli-color](https://github.com/medikoo/cli-color)
+* [commander](https://github.com/visionmedia/commander.js)
+* [jsftp](https://github.com/sergi/jsftpgem)
+* [open](https://github.com/pwnall/node-open)
+* [wrench](https://github.com/ryanmcgrath/wrench-js)
+* [nodemailer]( https://github.com/andris9/Nodemailer)
+* [node-email-templates]( https://github.com/niftylettuce/node-email-templates)
+
+## Create a new microsite
+
+## Build assets (js, css & images) for microsite
+
+## Release microsite assets to media server

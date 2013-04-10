@@ -15,7 +15,11 @@ $(document).on('ready', function() {
   // moment.js lib
   moment().format();
 
-  var list = getMicrositeList(),
+  var micrositeListUrl = 'javascript/microsites.json',
+      request = $.ajax( micrositeListUrl, { dataType: 'json' } ),
+      micrositeList = request.pipe( function( data ) {
+        return data.sites;
+      }),
       arr = [],
       rows = { 'sites': []},
       rowsRetired = { 'sites': []},
@@ -33,7 +37,7 @@ $(document).on('ready', function() {
                 // '<td>{{ lastRelease }}</td>' +
                 '<td class="localBuiltSite"><a href="{{ localProdPath }}"><i class="icon-edit"></i></a></td>' +
                 '<td class="pdSite"><a href="{{ pdPath }}"><i class="icon-share"></i></a></td>' +
-                '<td class="previewSite"><a href="{{ previewPath }}"><i class="icon-check"></i></a></td>' +
+                '<td class="previewSite"><a href="{{ previewPath }}?vgnextnomenu=1"><i class="icon-check"></i></a></td>' +
                 '<td class="publishedSite"><a href="{{ sitePath }}">{{ sitePath }}</a></td>' +
                 '</tr>' +
                 '{{/sites}}',
@@ -47,7 +51,7 @@ $(document).on('ready', function() {
     }
   };
 
-  list.done(function (items) {
+  micrositeList.done(function (items) {
 
     // get array of site names
     for (var site in items) {

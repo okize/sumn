@@ -329,7 +329,7 @@
       "createDate": 1361995349873,
       "siteDirectory": "kofaxembeddedsite",
       "isEmbedded": true,
-      "url": "http://computerweekly.com/KofaxBusinessProcessImprovementCentre",
+      "url": "http://www.computerweekly.com/kofaxbusinessprocessimprovementcentre",
       "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/kofaxbusinessprocessimprovementcentre",
       "releases": {
         "count": 10,
@@ -342,7 +342,19 @@
       "siteDirectory": "workdaycloudmicrosite",
       "isEmbedded": true,
       "url": "http://searchfinancialapplications.com/workday-builtfromthecloudup",
-      "urlPreview": "http://preview.techtarget.com:8080/workdaycloudmicrosite",
+      "urlPreview": "http://preview.techtarget.com:8080/searchFinancialApplications/workday-builtfromthecloudup",
+      "releases": {
+        "count": 0,
+        "last": 0
+      }
+    },
+    "IBMServiceVirtualization": {
+      "isActive": true,
+      "createDate": 1365565607369,
+      "siteDirectory": "ibmservicevirtmicrosite",
+      "isEmbedded": true,
+      "url": "http://searchsoftwarequality.com/IBMServiceVirtualiztion",
+      "urlPreview": "http://preview.techtarget.com:8080/IBMServiceVirtualization",
       "releases": {
         "count": 0,
         "last": 0

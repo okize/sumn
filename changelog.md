@@ -1,6 +1,6 @@
-## v0.1.0 - 03/01/2013
+## v0.1.0 - 04/15/2013
 
-* first working version
+* first functional version
 
 ## v0.0.0 - 01/22/2013
 
