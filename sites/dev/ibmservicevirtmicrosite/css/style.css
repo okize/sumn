@@ -88,14 +88,16 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 #micrositeContainerInner { margin: 0; }
 #micrositeContainerCompress { margin: 0 auto; width: 980px; }
 #micrositeContent { font-size: 80%; overflow: hidden; margin: 0 20px 25px; }
-#micrositeContentColumnFull { margin: 0 0 25px; }
+#micrositeContentColumnFull { background:url(../images/business-woman.png) no-repeat 700px 0; margin: 0 0 25px; }
+#micrositeContentColumnFull .introText {padding:15px 0 0;width: 620px}
+#micrositeContentColumnFull .introText h3{margin:0 0 .5em;}
+#micrositeContentColumnFull .introText p{font-size: 14px; line-height: 1.5}
 #micrositeContentColumnLeft { float: left; width: 620px; }
 #micrositeContentColumnRight { float: right; width: 300px; }
 .micrositeContentColumnSpan { clear: both; }
 .micrositeModuleContainer { margin: 0; }
 .micrositeModuleHeader { margin: 0; }
 .micrositeModuleHeader h3 { margin: 0; }
-#micrositeContentColumnFull { }
 
 /* media object block */
 .mediaBlock { margin: 10px; }
@@ -103,9 +105,9 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 .mediaBlock img { float: left; margin-right: 10px; display: block; }
 
 /* header */
-#micrositeHeader { clear:both; position: relative; margin: 0 0 15px; background-color: #ac1e82; }
+#micrositeHeader { clear:both; position: relative; margin: 0; background: #ac1e82 url(../images/ibm-logo.png) no-repeat 870px 10px; }
 #micrositeHeaderBanner p { margin: 0 !important; }
-#micrositeHeaderBanner h1 { margin: 0; color: #fff; font-size: 20px !important; line-height: 50px;  -webkit-margin-before: 0 !important; -webkit-margin-after: 0 !important; 	}
+#micrositeHeaderBanner h1 { margin: 0 0 0 22px; color: #fff; font-size: 24px !important; font-weight: 400; line-height: 62px;  -webkit-margin-before: 0 !important; -webkit-margin-after: 0 !important; 	}
 
 /* footer */
 #micrositeFooter { clear: both; position: relative; }
@@ -181,7 +183,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
 
 .featuredVideo {
-  border: 1px solid #444444;
+  border: 1px solid #ab1f80;
   margin: 0 0 25px;
   padding: 10px 0 10px 10px;
   position: relative;
@@ -230,7 +232,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
   border-left: 6px solid #cccccc;
 }
 .featuredVideo .featuredVideoPlaylist ul li.active {
-  border-left: 6px solid #2ba6cb;
+  border-left: 6px solid #01669a;
 }
 .featuredVideo .featuredVideoPlaylist .featuredVideoTitle {
   font-size: 12px;
