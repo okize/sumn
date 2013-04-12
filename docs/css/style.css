@@ -1123,7 +1123,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url("glyphicons-halflings-white.png");
+  background-image: url("../images/glyphicons-halflings-white.png");
 }
 .icon-glass {
   background-position: 0      0;
@@ -1561,9 +1561,12 @@ table th[class*="span"],
 }
 
 #micrositeListTable tr:hover td { background-color: #eee !important; }
-#micrositeListTable th { text-align: center; }
+#micrositeListTable th { text-align: center; cursor: pointer; }
 
-td.pdSite, td.previewSite, td.localBuiltSite { text-align: center; width: 40px; }
+td.pdSite, td.previewSite, td.localBuiltSite, td.state { text-align: center; min-width: 35px; }
+td.state.active { background-color: #acd779 !important; }
+td.state.inactive { background-color: #ed765c !important; }
+td.state span { display: none; }
 td.count { text-align: center; width: 20px; }
 td.releases { text-align: center; width: 80px; }
 td.createDate { text-align: center; min-width: 80px; width: 80px; }
