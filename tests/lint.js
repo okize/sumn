@@ -56,11 +56,3 @@ for (var i = 0, len = files.length; i < len; i++) {
 }
 
 console.log('\n');
-
-
-/* regex testing list */
-// ./lib/lang/messages.fr.json
-// ./lib/modules/sites.js
-// ./lib/templates/releaseEmail/html.ejs
-// ./lib/foobar.css
-// ./lib/anotherFile.jse

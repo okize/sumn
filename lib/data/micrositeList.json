@@ -97,7 +97,7 @@
       }
     },
     "Compellent": {
-      "isActive": true,
+      "isActive": false,
       "createDate": 1338523200000,
       "siteDirectory": "compellent",
       "isEmbedded": false,
@@ -121,7 +121,7 @@
       }
     },
     "ComputingPowerCenter": {
-      "isActive": true,
+      "isActive": false,
       "createDate": 1339205143885,
       "siteDirectory": "computingpowercenter",
       "isEmbedded": false,

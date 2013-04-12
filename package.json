@@ -37,7 +37,7 @@
     "npm": "1.2.x"
   },
   "scripts": {
-    "test": "node ./tests/lint.js"
+    "test": "node ./tests/lint"
   },
   "licenses": [
     {
