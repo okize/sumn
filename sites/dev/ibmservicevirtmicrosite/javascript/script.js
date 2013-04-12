@@ -11,6 +11,18 @@ $(document).ready(function () {
     addThisButtonFollow: true
   });
 
+  $('.featuredVideo').featuredVideo({
+    autoplayFirstVideo: false,
+    showPlaylist: true,
+    showPlaylistTooltips: true,
+    tooltipHtml: '<div class="featuredVideoPlaylistTooltip"></div>'
+  });
+
+  $('.contentTabs').contentTabs({
+    tabLocation: 'left',
+    pinPanelIntro: true
+  });
+
 });
 
 /*!
