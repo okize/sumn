@@ -2,6 +2,6 @@ user.json
 npm-debug.log
 node_modules/
 logs/
-src/build/
+sites/build/
 ~trash/
 styleguide.md
