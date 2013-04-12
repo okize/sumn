@@ -97,7 +97,7 @@
       }
     },
     "Compellent": {
-      "isActive": true,
+      "isActive": false,
       "createDate": 1338523200000,
       "siteDirectory": "compellent",
       "isEmbedded": false,
@@ -121,7 +121,7 @@
       }
     },
     "ComputingPowerCenter": {
-      "isActive": true,
+      "isActive": false,
       "createDate": 1339205143885,
       "siteDirectory": "computingpowercenter",
       "isEmbedded": false,
@@ -332,7 +332,7 @@
       "url": "http://www.computerweekly.com/kofaxbusinessprocessimprovementcentre",
       "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/kofaxbusinessprocessimprovementcentre",
       "releases": {
-        "count": 10,
+        "count": 0,
         "last": 0
       }
     },
