@@ -19,7 +19,9 @@
   },
   "devDependencies": {
     "debug": "0.7.x",
-    "jshint": "0.9.1"
+    "jshint": "0.9.x",
+    "async": "0.2.x",
+    "request": "2.16.x"
   },
   "repository": {
     "type": "git",

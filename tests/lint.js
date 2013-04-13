@@ -1,7 +1,12 @@
+// modules
 var fs = require('fs'),
     jshint = require('jshint').JSHINT,
     wrench = require('wrench'),
     _ = require('underscore');
+
+// ✓ ✔ ✕ ✖ ✗ ✘
+var pass = ' \033[32m✔\033[39m ',
+    fail = ' \033[31m✘\033[39m ';
 
 var getJsFiles = function () {
 
@@ -29,16 +34,15 @@ var lint = function (data, filename) {
 
   if ( jshint( data.toString() ) ) {
 
-    console.log('    \033[32m✓\033[39m ' + filename + ' has no errors.');
+    console.log(pass + filename + ' has no errors.');
 
   } else {
 
-    console.log('Errors in file ' + filename);
+    console.log(fail + filename + ' has errors');
     var out = jshint.data(),
     errors = out.errors;
-
     for(var j=0;j<errors.length;j++) {
-      console.log(errors[j].line + ':' + errors[j].character + ' -> ' + errors[j].reason + ' -> ' + errors[j].evidence);
+      console.log('\t' + errors[j].line + ':' + errors[j].character + ' -> ' + errors[j].reason + ' -> ' + errors[j].evidence);
     }
 
   }
