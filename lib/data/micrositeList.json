@@ -2,9 +2,10 @@
   "sites": {
     "HPConverge": {
       "createDate": 1326430800000,
-      "isActive": true,
-      "siteDirectory": "hp",
       "isEmbedded": false,
+      "isActive": false,
+      "isOldDesign": true,
+      "siteDirectory": "hp",
       "url": "http://www.convergedinfrastructure.com",
       "urlPreview": "http://preview.techtarget.com/HPConverge",
       "releases": {
@@ -14,9 +15,10 @@
     },
     "Brocade": {
       "createDate": 1330578000000,
-      "isActive": false,
-      "siteDirectory": "brocade",
       "isEmbedded": true,
+      "isActive": false,
+      "isOldDesign": false,
+      "siteDirectory": "brocade",
       "url": "http://searchdatacenter.techtarget.com/BrocadeDataCenter",
       "urlPreview": "http://preview.techtarget.com:8080/Brocade",
       "releases": {
@@ -26,9 +28,10 @@
     },
     "MicroscopeACES": {
       "createDate": 1331524800000,
-      "isActive": false,
-      "siteDirectory": "microscopeaces",
       "isEmbedded": false,
+      "isActive": false,
+      "isOldDesign": false,
+      "siteDirectory": "microscopeaces",
       "url": "http://www.microscopeacesawards.co.uk",
       "urlPreview": "http://preview.techtarget.com:8080/MicroscopeACES",
       "releases": {
@@ -38,9 +41,10 @@
     },
     "Dell12g": {
       "createDate": 1331784000000,
-      "isActive": true,
-      "siteDirectory": "dell12g",
       "isEmbedded": false,
+      "isActive": true,
+      "isOldDesign": false,
+      "siteDirectory": "dell12g",
       "url": "http://www.DellInnovates.com",
       "urlPreview": "http://preview.techtarget.com:8080/Dell12g",
       "releases": {
@@ -50,9 +54,10 @@
     },
     "APCDataCenter": {
       "createDate": 1338350400000,
-      "isActive": false,
-      "siteDirectory": "apcdatacenterpowerzone",
       "isEmbedded": true,
+      "isActive": false,
+      "isOldDesign": false,
+      "siteDirectory": "apcdatacenterpowerzone",
       "url": "http://www.preview.techtarget.com/APCDataCenter",
       "urlPreview": "http://searchEnterpriseDesktop.com/APCPowerandProtection",
       "releases": {
@@ -62,9 +67,10 @@
     },
     "HPServicesEMEA": {
       "createDate": 1335240000000,
-      "isActive": true,
-      "siteDirectory": "hpservicesemea",
       "isEmbedded": false,
+      "isActive": false,
+      "isOldDesign": true,
+      "siteDirectory": "hpservicesemea",
       "url": "http://www.hpglobalservices.com",
       "urlPreview": "http://preview.techtarget.com:8080/HPServicesEMEA",
       "releases": {
@@ -73,10 +79,11 @@
       }
     },
     "CiscoUnifiedDatacenter": {
-      "isActive": true,
       "createDate": 1337227200000,
-      "siteDirectory": "ciscounifieddatacenter",
+      "isActive": true,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "ciscounifieddatacenter",
       "url": "http://www.ciscounifieddatacenter.com",
       "urlPreview": "http://preview.techtarget.com:8080/CiscoUnifiedDatacenter",
       "releases": {
@@ -85,10 +92,11 @@
       }
     },
     "MicrosoftPrivateCloudSolutions": {
-      "isActive": false,
       "createDate": 1336205143885,
-      "siteDirectory": "microsoftprivatecloudsolutions",
+      "isActive": false,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "microsoftprivatecloudsolutions",
       "url": "http://searchVMWare.com/MicrosoftPrivateCloudSolutions",
       "urlPreview": "http://preview.techtarget.com:8080/MicrosoftPrivateCloudSolutions",
       "releases": {
@@ -97,10 +105,11 @@
       }
     },
     "Compellent": {
-      "isActive": false,
       "createDate": 1338523200000,
-      "siteDirectory": "compellent",
+      "isActive": false,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "compellent",
       "url": "http://www.storageexpertcenter.com",
       "urlPreview": "http://preview.techtarget.com:8080/Compellent",
       "releases": {
@@ -109,10 +118,11 @@
       }
     },
     "RIMMobileChaos": {
-      "isActive": false,
       "createDate": 1338868800000,
-      "siteDirectory": "rimmobilechaos",
+      "isActive": false,
       "isEmbedded": false,
+      "isOldDesign": true,
+      "siteDirectory": "rimmobilechaos",
       "url": "http://www.embracingmobilechaos.com",
       "urlPreview": "http://preview.techtarget.com:8080/RIMMobileChaos",
       "releases": {
@@ -121,10 +131,11 @@
       }
     },
     "ComputingPowerCenter": {
-      "isActive": false,
       "createDate": 1339205143885,
-      "siteDirectory": "computingpowercenter",
+      "isActive": false,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "computingpowercenter",
       "url": "http://www.computingpowercenter.com",
       "urlPreview": "http://preview.techtarget.com:8080/ComputingPowerCenter",
       "releases": {
@@ -133,10 +144,11 @@
       }
     },
     "IntegratedSolutionsCenter": {
-      "isActive": false,
       "createDate": 1339205168762,
-      "siteDirectory": "integratedsolutionscenter",
+      "isActive": false,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "integratedsolutionscenter",
       "url": "http://www.simplifiedITcenter.com",
       "urlPreview": "http://preview.techtarget.com:8080/IntegratedSolutionsCenter",
       "releases": {
@@ -145,10 +157,11 @@
       }
     },
     "VirtualizationManagementCenter": {
-      "isActive": false,
       "createDate": 1339205189453,
-      "siteDirectory": "virtualizationmanagementcenter",
+      "isActive": false,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "virtualizationmanagementcenter",
       "url": "http://www.advancevirtualization.com",
       "urlPreview": "http://preview.techtarget.com:8080/VirtualizationManagementCenter",
       "releases": {
@@ -157,10 +170,11 @@
       }
     },
     "DellEmpowers2": {
-      "isActive": true,
       "createDate": 1341201600000,
-      "siteDirectory": "dellempowers2",
+      "isActive": true,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "dellempowers2",
       "url": "http://www.dellempowers.com",
       "urlPreview": "http://preview.techtarget.com:8080/DellEmpowers2",
       "releases": {
@@ -169,10 +183,11 @@
       }
     },
     "NetAppNativeAdvertising": {
-      "isActive": true,
       "createDate": 1342105143885,
-      "siteDirectory": "netappnativeadvertising",
+      "isActive": true,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "netappnativeadvertising",
       "url": "http://searchstorage.techtarget.com/Sponsored-News-Archive",
       "urlPreview": "http://preview.techtarget.com:8080/searchStorage/Sponsored-News-Archive",
       "releases": {
@@ -181,10 +196,11 @@
       }
     },
     "HPESS": {
-      "isActive": true,
       "createDate": 1343188800000,
-      "siteDirectory": "hpess",
+      "isActive": true,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "hpess",
       "url": "http://www.hp-securitycenter.com",
       "urlPreview": "http://preview.techtarget.com:8080/HPESS",
       "releases": {
@@ -193,10 +209,11 @@
       }
     },
     "HPConvergedCloudCentre": {
-      "isActive": false,
       "createDate": 1343880000000,
-      "siteDirectory": "hpconvergedcloudcentre",
+      "isActive": true,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "hpconvergedcloudcentre",
       "url": "http://www.hp-convergedcloud.com/",
       "urlPreview": "http://preview.techtarget.com:8080/HPConvergedCloudCentre",
       "releases": {
@@ -205,10 +222,11 @@
       }
     },
     "HPCI2": {
-      "isActive": true,
       "createDate": 1344571200000,
-      "siteDirectory": "hpci2",
+      "isActive": true,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "hpci2",
       "url": "http://www.convergedinfrastructure.com",
       "urlPreview": "http://preview.techtarget.com:8080/HPCI2/",
       "releases": {
@@ -217,10 +235,11 @@
       }
     },
     "VMworld2012": {
-      "isActive": false,
       "createDate": 1346904000000,
-      "siteDirectory": "vmworld2012",
+      "isActive": false,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "vmworld2012",
       "url": "http://searchvmware.techtarget.com/vmworld2012veeam",
       "urlPreview": "http://preview.techtarget.com:8080/searchVMware/VMworld2012",
       "releases": {
@@ -229,10 +248,11 @@
       }
     },
     "VMworldEurope2012": {
-      "isActive": false,
       "createDate": 1347422400000,
-      "siteDirectory": "vmworldeurope2012",
+      "isActive": false,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "vmworldeurope2012",
       "url": "http://searchvmware.techtarget.com/vmworldEurope2012HDS",
       "urlPreview": "http://preview.techtarget.com:8080/searchVMware/vmworldEurope2012HDS",
       "releases": {
@@ -241,10 +261,11 @@
       }
     },
     "SmarterComputingRadioSeries": {
-      "isActive": true,
       "createDate": 1350792000000,
-      "siteDirectory": "smartercomputingradioseries",
+      "isActive": true,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "smartercomputingradioseries",
       "url": "http://searchdatamanagement.techtarget.com/SmarterComputingRadioSeries",
       "urlPreview": "http://preview.techtarget.com:8080/searchDataManagement/SmarterComputingRadioSeries",
       "releases": {
@@ -253,10 +274,11 @@
       }
     },
     "IBMSmarterPlanet": {
-      "isActive": true,
       "createDate": 1352828984166,
-      "siteDirectory": "ibmsmarterplanetuk",
+      "isActive": true,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "ibmsmarterplanetuk",
       "url": "http://www.computerweekly.com/IBMSmarterPlanet",
       "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/IBMSmarterPlanet",
       "releases": {
@@ -265,10 +287,11 @@
       }
     },
     "HPEnterpriseServicesSolutionsCentre": {
-      "isActive": true,
       "createDate": 1355353344695,
-      "siteDirectory": "hpenterpriseservicessolutionscentre",
+      "isActive": true,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "hpenterpriseservicessolutionscentre",
       "url": "http://www.hp-enterprisesolutions.com",
       "urlPreview": "http://preview.techtarget.com:8080/HPEnterpriseServicesSolutionsCentre",
       "releases": {
@@ -277,10 +300,11 @@
       }
     },
     "RIMEmbracingMobileChaos2": {
-      "isActive": true,
       "createDate": 1357804217963,
-      "siteDirectory": "rimembracingmobilechaos2",
+      "isActive": true,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "rimembracingmobilechaos2",
       "url": "http://www.embracingmobilechaos.com",
       "urlPreview": "http://preview.techtarget.com:8080/RIMEmbracingMobileChaos2",
       "releases": {
@@ -289,10 +313,11 @@
       }
     },
     "IntelITConsumerizationCorner": {
-      "isActive": true,
       "createDate": 1358054656675,
-      "siteDirectory": "intelitconsumerizationcorner",
+      "isActive": true,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "intelitconsumerizationcorner",
       "url": "http://searchconsumerization.techtarget.com/IntelITConsumerizationCorner",
       "urlPreview": "http://preview.techtarget.com:8080/searchConsumerization/IntelITConsumerizationCorner",
       "releases": {
@@ -301,10 +326,11 @@
       }
     },
     "Oraclebusinesstransformationcentre": {
-      "isActive": true,
       "createDate": 1359054720310,
-      "siteDirectory": "businesstransformationcentre",
+      "isActive": true,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "businesstransformationcentre",
       "url": "http://www.computerweekly.com/Oraclebusinesstransformationcentre",
       "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/Oraclebusinesstransformationcentre",
       "releases": {
@@ -313,10 +339,11 @@
       }
     },
     "HPServicesEMEA2": {
-      "isActive": false,
       "createDate": 1360208013649,
-      "siteDirectory": "hpservicesemea2",
+      "isActive": true,
       "isEmbedded": false,
+      "isOldDesign": false,
+      "siteDirectory": "hpservicesemea2",
       "url": "http://www.hp-applications.com",
       "urlPreview": "http://preview.techtarget.com:8080/HPServicesEMEA2",
       "releases": {
@@ -325,10 +352,11 @@
       }
     },
     "KofaxEmbeddedSite": {
-      "isActive": true,
       "createDate": 1361995349873,
-      "siteDirectory": "kofaxembeddedsite",
+      "isActive": true,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "kofaxembeddedsite",
       "url": "http://www.computerweekly.com/kofaxbusinessprocessimprovementcentre",
       "urlPreview": "http://preview.techtarget.com:8080/ComputerWeekly/kofaxbusinessprocessimprovementcentre",
       "releases": {
@@ -337,10 +365,11 @@
       }
     },
     "WorkdayCloudMicrosite": {
-      "isActive": true,
       "createDate": 1363109006246,
-      "siteDirectory": "workdaycloudmicrosite",
+      "isActive": true,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "workdaycloudmicrosite",
       "url": "http://searchfinancialapplications.techtarget.com/workday-builtfromthecloudup",
       "urlPreview": "http://preview.techtarget.com:8080/searchFinancialApplications/workday-builtfromthecloudup",
       "releases": {
@@ -349,10 +378,11 @@
       }
     },
     "IBMServiceVirtualization": {
-      "isActive": true,
       "createDate": 1365565607369,
-      "siteDirectory": "ibmservicevirtmicrosite",
+      "isActive": true,
       "isEmbedded": true,
+      "isOldDesign": false,
+      "siteDirectory": "ibmservicevirtmicrosite",
       "url": "http://searchsoftwarequality.techtarget.com/IBMServiceVirtualiztion",
       "urlPreview": "http://preview.techtarget.com:8080/IBMServiceVirtualization",
       "releases": {
