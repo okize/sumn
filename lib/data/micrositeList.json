@@ -109,7 +109,7 @@
       }
     },
     "RIMMobileChaos": {
-      "isActive": true,
+      "isActive": false,
       "createDate": 1338868800000,
       "siteDirectory": "rimmobilechaos",
       "isEmbedded": false,
@@ -193,7 +193,7 @@
       }
     },
     "HPConvergedCloudCentre": {
-      "isActive": true,
+      "isActive": false,
       "createDate": 1343880000000,
       "siteDirectory": "hpconvergedcloudcentre",
       "isEmbedded": false,
@@ -313,7 +313,7 @@
       }
     },
     "HPServicesEMEA2": {
-      "isActive": true,
+      "isActive": false,
       "createDate": 1360208013649,
       "siteDirectory": "hpservicesemea2",
       "isEmbedded": false,

@@ -15,7 +15,9 @@
     "ftp": "0.2.x",
     "jsftp": "0.5.x",
     "nodemailer": "0.4.x",
-    "email-templates": "0.0.x"
+    "email-templates": "0.0.x",
+    "multimeter": "0.1.x",
+    "cli-table": "0.2.x"
   },
   "devDependencies": {
     "debug": "0.7.x",
@@ -39,6 +41,7 @@
     "npm": "1.2.x"
   },
   "scripts": {
+    "install": "node ./lib/scripts/install",
     "test": "node ./tests/lint"
   },
   "licenses": [
