@@ -4,7 +4,7 @@ $(document).ready(function () {
 
   'use strict';
 
-  $('#micrositeContent').addThisShare({
+  $('#micrositeContainer').addThisShare({
     addThisButtons: ['email', 'linkedin', 'facebook', 'twitter'],
     addThisButtonOrientation: 'vertical',
     addThisButtonSize: 'large',
