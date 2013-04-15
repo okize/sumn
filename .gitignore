@@ -1,6 +1,9 @@
 user.json
+lib/config/
 npm-debug.log
 node_modules/
 logs/
 sites/build/
 styleguide.md
+
+sites/dev/~convertFromPhp/

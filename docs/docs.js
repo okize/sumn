@@ -16,4 +16,6 @@ fs.writeFile(outputPath + outputFilename, JSON.stringify(micrositeList, null, 2)
 });
 
 // open documentation in browser
-openBrowser(cfg.localDocumentationServer, cfg.browser);
+if (cfg.useLocalServers) {
+  openBrowser(cfg.localServers.documentation, cfg.browser);
+}
