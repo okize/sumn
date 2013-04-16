@@ -1578,3 +1578,25 @@ th.tablesorter-headerAsc, th.tablesorter-headerDesc { background-color: #efefef;
 th.tablesorter-headerAsc .tablesorter-icon, th.tablesorter-headerDesc .tablesorter-icon { display: inline-block; }
 th.tablesorter-headerAsc .tablesorter-icon { background-position: -289px -96px; }
 th.tablesorter-headerDesc .tablesorter-icon { background-position: -312px -96px; }
+
+
+/* for user.json guide */
+.npm .pair {
+  cursor:pointer;
+}
+
+.npm .pair:hover {
+  background-color: #FFFBCC;
+}
+.pair {
+  padding:0px;
+  margin:0px;
+}
+
+.hint {
+  position:absolute;
+  top:90px;
+  font-size:24px;
+  width:500px;
+  line-height:42px;
+}

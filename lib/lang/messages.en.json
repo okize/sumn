@@ -15,12 +15,14 @@
     "ftpStarted": "FTP session started on %s",
     "emailSending": "emailing %s notification",
     "emailSuccess": "email sent successfully:",
-    "creatingBuildDirectory": "creating build directory..."
+    "creatingBuildDirectory": "creating build directory for %s",
+    "creatingRemoteDirectory": "creating %s directory",
+    "releasingSite": "releasing %s to remote server"
   },
 
   "error": {
     "genericError": "%s",
-    "ftpError": "could not connect to %s \nare you on the network?",
+    "ftpError": "could not connect to %s \n make sure you are on the TTGT network or VPN",
     "argumentsMissing": "arguments for %s missing",
     "notValidProperty": "%s is not a valid property",
     "needSitename": "please enter a name for the new microsite",
@@ -28,19 +30,19 @@
     "dirAlreadyExists": "that directory already exists, choose another",
     "siteAlreadyExists": "a microsite by that name already exists, try another name",
     "siteDoesNotExist": "there is no record of a microsite named %s",
-    "noEnvSpecified": "which environment do you want to release to? please use the -e flag to specify an environment",
+    "noEnvSpecified": "specify which environment you want to release to.\n please use the -e flag to specify an environment",
     "invalidEnvSpecified": "environment must be eng, qa or prod",
     "cdnPurgeNoUrls": "there are no files built for %s",
     "siteAlreadyRetired": "%s has already been retired",
     "noTypeSites": "there are no %s sites",
     "emailFail": "something went wrong so the email was not sent\n%s",
     "noReleaseNotes": "please include release notes via the -m flag",
-    "invalidAssetTypeSpecified": "%s invalid asset types\nassets must be either 'javascript', 'css' and/or 'images' separated by commas",
+    "invalidAssetTypeSpecified": "%s invalid asset types\n assets must be either 'javascript', 'css' and/or 'images' separated by commas",
     "missingSiteName": "please include the name of the site you want to %s"
   },
 
   "warn": {
-    "dumb": "that is a dumb thing that you're trying to do"
+    "remoteDirAlreadyExists": "%s directory already exists"
   },
 
   "ask": {
