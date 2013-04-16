@@ -29,96 +29,42 @@
   <span class="pair"><span class="key">"os"</span>: <span class="value">""</span>,</span>
   <span class="pair"><span class="key">"browser"</span>: <span class="value">""</span>,</span>
   <span class="pair"><span class="key">"useLocalServers"</span>: <span class="value">false</span>,</span>
-  <span class="pair"><span class="key">"localServers"</span>: <span class="value">{
-    <span class="pair"><span class="key">"documentation"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"dev"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"build"</span>: <span class="value">""</span></span>
+  <span class="pair"><span class="key">"localServers"</span>: {
+    <span class="key">"documentation"</span>: <span class="value">""</span>,
+    <span class="key">"dev"</span>: <span class="value">""</span>,
+    <span class="key">"build"</span>: <span class="value">""</span></span>
   },
-  <span class="pair"><span class="key">"ftp"</span>: <span class="value">{
-    <span class="pair"><span class="key">"host"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"port"</span>: <span class="value">21</span>,</span>
-    <span class="pair"><span class="key">"mediaPath"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"username"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"password"</span>: <span class="value">""
-  }</span>,</span>
-  <span class="pair"><span class="key">"cdn"</span>: <span class="value">{
-    <span class="pair"><span class="key">"url"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"mediaPath"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"username"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"password"</span>: <span class="value">""
-  }</span>,</span>
-  <span class="pair"><span class="key">"smtp"</span>: <span class="value">{
-    <span class="pair"><span class="key">"emailService"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"emailUser"</span>: <span class="value">""</span>,</span>
-    <span class="pair"><span class="key">"emailPassword"</span>: <span class="value">""
-  }</span>,</span>
-  <span class="pair"><span class="key">"notifications"</span>: <span class="value">{
-    <span class="pair"><span class="key">"create"</span>: <span class="value">{
-      <span class="pair"><span class="key">"sendEmails"</span>: <span class="value">false</span>,</span>
-      <span class="pair"><span class="key">"emailTemplateName"</span>: <span class="value">"newSiteEmail"</span>,</span>
-      <span class="pair"><span class="key">"emailSubject"</span>: <span class="value">"New microsite created: "</span>,</span>
-      <span class="pair"><span class="key">"recipients"</span>: <span class="value">[]
-    }</span>,</span>
-    <span class="pair"><span class="key">"release"</span>: <span class="value">{
-      <span class="pair"><span class="key">"sendEmails"</span>: <span class="value">false</span>,</span>
-      <span class="pair"><span class="key">"emailTemplateName"</span>: <span class="value">"releaseEmail"</span>,</span>
-      <span class="pair"><span class="key">"emailSubject"</span>: <span class="value">"Release details for: "</span>,</span>
-      <span class="pair"><span class="key">"recipients"</span>: <span class="value">[]
-    }</span>
-  }
-}
-
-{
-  <span class="pair"><span class="key">"name"</span>: <span class="value">"http-server"</span>,</span>
-  <span class="pair"><span class="key">"preferGlobal"</span>: <span class="value">true</span>,</span>
-  <span class="pair"><span class="key">"version"</span>: "0.3.0",</span>
-  <span class="pair"><span class="key">"author"</span>: <span class="value">"Nodejitsu &lt;support@nodejitsu.com&gt;"</span></span>,
-  <span class="pair"><span class="key">"description"</span>: <span class="value">"a simple zero-configuration command-line http server"</span></span>,
-  <span class="pair"><span class="key">"contributors"</span>: [
-  <span class="value">  {
-      "name": "Marak Squires",
-      "email": "marak@nodejitsu.com"
-    }</span></span>
-  ],
-  <span class="pair"><span class="key">"bin"</span></span>: {
-    <span class="pair"><span class="key">"http-server"</span>: <span class="value">"./bin/http-server"</span></span>
+  <span class="pair"><span class="key">"ftp"</span>: {
+    <span class="key">"host"</span>: <span class="value">""</span>,
+    <span class="key">"port"</span>: <span class="value">21</span>,
+    <span class="key">"mediaPath"</span>: <span class="value">""</span>,
+    <span class="key">"username"</span>: <span class="value">""</span>,
+    <span class="key">"password"</span>: <span class="value">""</span></span>
   },
-  <span class="pair"><span class="key">"scripts"</span></span>: {
-    <span class="pair"><span class="key">"start"</span>: <span class="value">"node ./bin/http-server"</span></span>,
-    <span class="pair"><span class="key">"test"</span>: <span class="value">"vows --spec --isolate"</span></span>,
-    <span class="pair"><span class="key">"predeploy"</span>: <span class="value">"echo This will be run before deploying the app"</span></span>,
-    <span class="pair"><span class="key">"postdeploy"</span>: <span class="value">"echo This will be run after deploying the app"</span></span>
+  <span class="pair"><span class="key">"cdn"</span>: {
+    <span class="key">"url"</span>: <span class="value">""</span>,
+    <span class="key">"mediaPath"</span>: <span class="value">""</span>,
+    <span class="key">"username"</span>: <span class="value">""</span>,
+    <span class="key">"password"</span>: <span class="value">""</span></span>
   },
-  <span class="pair"><span class="key">"main"</span>: <span class="value">"./lib/http-server"</span></span>,
-  <span class="pair"><span class="key">"repository"</span>:</span> {
-    <span class="pair"><span class="key">"type"</span>: <span class="value">"git"</span></span>,
-    <span class="pair"><span class="key">"url"</span>: <span class="value">"https://github.com/nodejitsu/http-server.git"</span></span>
+  <span class="pair"><span class="key">"smtp"</span>: {
+    <span class="key">"emailService"</span>: <span class="value">""</span>,
+    <span class="key">"emailUser"</span>: <span class="value">""</span>,
+    <span class="key">"emailPassword"</span>: <span class="value">""</span></span>
   },
-  <span class="pair"><span class="key">"keywords"</span></span>: [
-    <span class="pair"><span class="key">"cli"</span></span>,
-    <span class="pair"><span class="key">"http"</span></span>,
-    <span class="pair"><span class="key">"server"</span></span>
-  ],
-  <span class="pair"><span class="key">"dependencies"</span></span> : {
-    <span class="pair"><span class="key">"colors"</span>&nbsp;&nbsp;&nbsp;: <span class="value"> "*"</span></span>,
-    <span class="pair"><span class="key">"flatiron"</span>&nbsp;: <span class="value"> "0.1.x",</span></span>
-    <span class="pair"><span class="key">"optimist"</span>&nbsp;: <span class="value"> "0.2.x",</span></span>
-    <span class="pair"><span class="key">"union"</span>&nbsp;&nbsp;&nbsp;&nbsp;: <span class="value"> "0.1.x",</span></span>
-    <span class="pair"><span class="key">"ecstatic"</span>&nbsp;: <span class="value"> "0.1.x",</span></span>
-    <span class="pair"><span class="key">"plates"</span>&nbsp;&nbsp;&nbsp;: <span class="value"> "https://github.com/flatiron/plates/tarball/master"</span></span>
+  <span class="pair"><span class="key">"notifications"</span></span>: {
+    <span class="pair"><span class="key">"create"</span>: {
+      <span class="key">"sendEmails"</span>: <span class="value">false</span>,
+      <span class="key">"emailTemplateName"</span>: <span class="value">"newSiteEmail"</span>,
+      <span class="key">"emailSubject"</span>: <span class="value">"New microsite created: "</span>,
+      <span class="key">"recipients"</span>: <span class="value">[]</span></span>
   },
-  <span class="pair"><span class="key">"analyze"</span>: <span class="value">false</span></span>,
-  <span class="pair"><span class="key">"devDependencies"</span></span>: {
-    <span class="pair"><span class="key">"vows"</span>&nbsp;&nbsp;&nbsp;&nbsp;: <span class="value"> "0.5.x"</span></span>,
-    <span class="pair"><span class="key">"request"</span>&nbsp;: <span class="value"> "2.1.x"</span></span>
-  },
-  <span class="pair"><span class="key">"bundledDependencies"</span>:<span class="value"> [
-    "union",
-    "ecstatic"
-  ],</span> </span>
-  <span class="pair"><span class="key">"license"</span></span>: <span class="value">"MIT"</span>,
-  <span class="pair"><span class="key">"engines"</span>:</span> {
-    <span class="pair"><span class="key">"node"</span>:<span class="value"> ">=0.6"</span></span>
+    <span class="pair"><span class="key">"release"</span>: {
+      <span class="key">"sendEmails"</span>: <span class="value">false</span>,
+      <span class="key">"emailTemplateName"</span>: <span class="value">"releaseEmail"</span>,
+      <span class="key">"emailSubject"</span>: <span class="value">"Release details for: "</span>,
+      <span class="key">"recipients"</span>: <span class="value">[]</span></span>
+    }
   }
 }
 
