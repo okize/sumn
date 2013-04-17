@@ -1,6 +1,7 @@
 # sumn: Start Up a Microsite Now
+A command-line tool for microsite front-end management
 
-Command-line tool for microsite front-end management.
+#![sumn](http://okize.com/sumnLogoColor.png)
 
 ## Installation
 
@@ -21,8 +22,8 @@ npm install
 * [jsftp](https://github.com/sergi/jsftpgem)
 * [open](https://github.com/pwnall/node-open)
 * [wrench](https://github.com/ryanmcgrath/wrench-js)
-* [nodemailer]( https://github.com/andris9/Nodemailer)
-* [node-email-templates]( https://github.com/niftylettuce/node-email-templates)
+* [nodemailer](https://github.com/andris9/Nodemailer)
+* [node-email-templates](https://github.com/niftylettuce/node-email-templates)
 
 ## Create a new microsite
 

@@ -1,304 +1,304 @@
 // last update: 08-31-2012 @ 11:40
 $(document).ready(function ($) {
 
-	'use strict';
+  'use strict';
 
-	//turn off 'premium content'
-	$("#premiumContentPromoContainer").css({"visibility":"hidden"});
+  //turn off 'premium content'
+  $("#premiumContentPromoContainer").css({"visibility":"hidden"});
 
-	$('.contentNavigationCarousel').contentNavigationCarousel({
-		autoplay: true,
-		autoplaySpeed: 10000,
-		mouseEvent: 'hover',
-		switchSpeed: 500,
-		equalizeHeights: true
-	});
+  $('.contentNavigationCarousel').contentNavigationCarousel({
+    autoplay: true,
+    autoplaySpeed: 10000,
+    mouseEvent: 'hover',
+    switchSpeed: 500,
+    equalizeHeights: true
+  });
 
-	$('.filmstrip').filmstripCarousel({
-		navigation: true,
-		pagination: true,
-		speed: 500
-	});
+  $('.filmstrip').filmstripCarousel({
+    navigation: true,
+    pagination: true,
+    speed: 500
+  });
 
-	$('.carouselSlideProjector').slideProjectorCarousel({
-		autoplay: true,
-		autoplaySpeed: 5000,
-		slidesToShow: 3,
-		slidesToMove: 1
-	});
+  $('.carouselSlideProjector').slideProjectorCarousel({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 3,
+    slidesToMove: 1
+  });
 
-	// tabs
-	$.featureList(
-		$(".micrositeModuleFeaturedTabs li a").not('#Dell12g .micrositeModuleFeaturedTabs li a'),
-		$(".micrositeModuleFeaturedOutput > li").not('#Dell12g .micrositeModuleFeaturedOutput > li'), {
-			start_item	:	0
-		}
-	);
+  // tabs
+  $.featureList(
+    $(".micrositeModuleFeaturedTabs li a").not('#Dell12g .micrositeModuleFeaturedTabs li a'),
+    $(".micrositeModuleFeaturedOutput > li").not('#Dell12g .micrositeModuleFeaturedOutput > li'), {
+      start_item  : 0
+    }
+  );
 
-	// left scrollbars
-	$('.ibmBusinessAnalyticsText, .ibmSocialBusinessText, .ibmCloudComputingText').leftScrollbar();
+  // left scrollbars
+  $('.ibmBusinessAnalyticsText, .ibmSocialBusinessText, .ibmCloudComputingText').leftScrollbar();
 
-	// styled scrollbars
-	$('.micrositeFeaturedRelatedBody, .micrositeModuleFrontLines').not('#Dell12g .micrositeFeaturedRelatedBody').jScrollPane();
-
-
-	// the reason for this stupid stupid stupid hack: for the VIP sites we used a version of the featured content tabs that didn't
-	// actually have any tabs, but that _needed_ to have a custom scrollbar which meant that the scollbar that is normally
-	// applied to that widget _everywhere_ because we use the same javascript file for every microsite for some unknown reason
-	// which meant that the dom element we needed to apply it to for the VIP sites existed on the other sites that used featured
-	// tabs which would mean they would get double-scrollbars or just break or something so had to write the below hack to
-	// check if the domain is a VIP site before trying to apply the scrollbar to a different dom element than we normally would
-	// no doubt this will come up again so just add any future domains to the whiteList array
-	(function () {
-
-		var whiteList = [
-			'advancevirtualization',
-			'simplifieditcenter',
-			'computingpowercenter'
-		];
-		var regex = new RegExp('(www\\.)?(' + whiteList.join('|') + ')\\.com', 'g');
-		if(regex.test(window.location.hostname)) {
-			$('.micrositeModuleFeatured').jScrollPane();
-		}
-
-	})();
-
-	$('#groupCi').on('click', function() {
-		window.location.href = window.location.href + 'Infrastructure';
-	});
-
-	$('#groupCloud').on('click', function() {
-		window.location.href = window.location.href + 'Cloud';
-	});
-
-	// what's that? you want more stupid kludges? here you go:
-	var socialMediainArticleToolbar = $('.micrositeSocialMediaButtons');
-	if (socialMediainArticleToolbar.length) {
-		socialMediainArticleToolbar.show();
-		$('#micrositeSocialMediaNav, #micrositeSocialMediaFooter').hide();
-	}
-	//hide social for news archive, this is another kludge until it's turned off in the template
-	if (typeof microsite !== "undefined") {
-		if ('NetAppNativeAdvertisingSponsoredNewsArchive' === microsite) {
-			$('#micrositeSocialMediaNav, #micrositeSocialMediaFooter').hide();
-		}
-	}
-
-	// ie fixes
-	$('.micrositeFeaturedRelated ul li h4:nth-child(2)').css({ padding: "0 0 10px 0" });
-	$('#micrositeContentColumnOneThirdRight .micrositeModuleFeatured ul.micrositeModuleFeaturedOutput > li').css({ padding: "0" });
-	$('#micrositeContentColumnOneThirdRight .micrositeModuleFeatured > ul').css({ position: "relative" });
-
-	// social media icons
-	if ($('#micrositeSocialMediaNav').length) {
-		$('#micrositeContent').prepend('<div class="micrositeSocialMediaNavExtrapadding" style="height:35px;"></div>');
-		$('#micrositeContent').css({
-			'padding-top' : '0',
-			'margin-top' : '0'
-		});
-	}
-
-	// dell bg fade
-	var bgFade = function () {
-		$("#Dell12g .micrositeModuleFeaturedOutput img.bg")
-			.delay(5000)
-			.first()
-			.appendTo('#Dell12g .micrositeModuleFeaturedOutput')
-			.fadeOut(3000);
-		$("#Dell12g .micrositeModuleFeaturedOutput img.bg")
-			.first()
-			.fadeIn(3000);
-		setTimeout(bgFade, 8000);
-	};
-
-	var bgFadeFR = function () {
-		$("#Dell12g .micrositeModuleFeaturedOutput img.bg").delay(5000).first().appendTo('#Dell12g .micrositeModuleFeaturedOutput').fadeOut(3000);
-		$("#Dell12g .micrositeModuleFeaturedOutput img.bg").first().fadeIn(3000);
-		setTimeout(bgFadeFR, 8000);
-	};
-
-	var bgFadeDE = function () {
-		$("#Dell12g .micrositeModuleFeaturedOutput img.bg").delay(5000).first().appendTo('#Dell12g .micrositeModuleFeaturedOutput').fadeOut(3000);
-		$("#Dell12g .micrositeModuleFeaturedOutput img.bg").first().fadeIn(3000);
-		setTimeout(bgFadeDE, 8000);
-	};
+  // styled scrollbars
+  $('.micrositeFeaturedRelatedBody, .micrositeModuleFrontLines').not('#Dell12g .micrositeFeaturedRelatedBody').jScrollPane();
 
 
+  // the reason for this stupid stupid stupid hack: for the VIP sites we used a version of the featured content tabs that didn't
+  // actually have any tabs, but that _needed_ to have a custom scrollbar which meant that the scollbar that is normally
+  // applied to that widget _everywhere_ because we use the same javascript file for every microsite for some unknown reason
+  // which meant that the dom element we needed to apply it to for the VIP sites existed on the other sites that used featured
+  // tabs which would mean they would get double-scrollbars or just break or something so had to write the below hack to
+  // check if the domain is a VIP site before trying to apply the scrollbar to a different dom element than we normally would
+  // no doubt this will come up again so just add any future domains to the whiteList array
+  (function () {
 
-	if ($('#Dell12g .micrositeModuleFeaturedOutput').length && $('#Dell12g .micrositeTabPower').length) {
+    var whiteList = [
+      'advancevirtualization',
+      'simplifieditcenter',
+      'computingpowercenter'
+    ];
+    var regex = new RegExp('(www\\.)?(' + whiteList.join('|') + ')\\.com', 'g');
+    if(regex.test(window.location.hostname)) {
+      $('.micrositeModuleFeatured').jScrollPane();
+    }
 
-		$('#Dell12g .micrositeModuleFeaturedOutput')
-			.css('background-image', 'url("http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1.png")')
-			.prepend('<img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1.png"><img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG2.png">');
-		bgFade();
-	}
+  })();
 
-	if ($('#Dell12g .micrositeModuleFeaturedOutput').length && $('#Dell12g .micrositeTabPower_FR').length) {
-		$('#Dell12g .micrositeModuleFeaturedOutput')
-			.css('background-image','url("http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1_FR.png")')
-			.prepend('<img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1_FR.png"><img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG2_FR.png">');
-		bgFadeFR();
-	}
+  $('#groupCi').on('click', function() {
+    window.location.href = window.location.href + 'Infrastructure';
+  });
 
-	if ($('#Dell12g .micrositeModuleFeaturedOutput').length && $('#Dell12g .micrositeTabPower_DE').length) {
-		$('#Dell12g .micrositeModuleFeaturedOutput')
-			.css('background-image','url("http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1_DE.png")')
-			.prepend('<img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1_DE.png"><img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG2_DE.png">');
-		bgFadeDE();
-	}
+  $('#groupCloud').on('click', function() {
+    window.location.href = window.location.href + 'Cloud';
+  });
+
+  // what's that? you want more stupid kludges? here you go:
+  var socialMediainArticleToolbar = $('.micrositeSocialMediaButtons');
+  if (socialMediainArticleToolbar.length) {
+    socialMediainArticleToolbar.show();
+    $('#micrositeSocialMediaNav, #micrositeSocialMediaFooter').hide();
+  }
+  //hide social for news archive, this is another kludge until it's turned off in the template
+  if (typeof microsite !== "undefined") {
+    if ('NetAppNativeAdvertisingSponsoredNewsArchive' === microsite) {
+      $('#micrositeSocialMediaNav, #micrositeSocialMediaFooter').hide();
+    }
+  }
+
+  // ie fixes
+  $('.micrositeFeaturedRelated ul li h4:nth-child(2)').css({ padding: "0 0 10px 0" });
+  $('#micrositeContentColumnOneThirdRight .micrositeModuleFeatured ul.micrositeModuleFeaturedOutput > li').css({ padding: "0" });
+  $('#micrositeContentColumnOneThirdRight .micrositeModuleFeatured > ul').css({ position: "relative" });
+
+  // social media icons
+  if ($('#micrositeSocialMediaNav').length) {
+    $('#micrositeContent').prepend('<div class="micrositeSocialMediaNavExtrapadding" style="height:35px;"></div>');
+    $('#micrositeContent').css({
+      'padding-top' : '0',
+      'margin-top' : '0'
+    });
+  }
+
+  // dell bg fade
+  var bgFade = function () {
+    $("#Dell12g .micrositeModuleFeaturedOutput img.bg")
+      .delay(5000)
+      .first()
+      .appendTo('#Dell12g .micrositeModuleFeaturedOutput')
+      .fadeOut(3000);
+    $("#Dell12g .micrositeModuleFeaturedOutput img.bg")
+      .first()
+      .fadeIn(3000);
+    setTimeout(bgFade, 8000);
+  };
+
+  var bgFadeFR = function () {
+    $("#Dell12g .micrositeModuleFeaturedOutput img.bg").delay(5000).first().appendTo('#Dell12g .micrositeModuleFeaturedOutput').fadeOut(3000);
+    $("#Dell12g .micrositeModuleFeaturedOutput img.bg").first().fadeIn(3000);
+    setTimeout(bgFadeFR, 8000);
+  };
+
+  var bgFadeDE = function () {
+    $("#Dell12g .micrositeModuleFeaturedOutput img.bg").delay(5000).first().appendTo('#Dell12g .micrositeModuleFeaturedOutput').fadeOut(3000);
+    $("#Dell12g .micrositeModuleFeaturedOutput img.bg").first().fadeIn(3000);
+    setTimeout(bgFadeDE, 8000);
+  };
 
 
 
-	//social media and colorbox
-	(function (mo, $, undefined) {
-		mo.pageUrl = window.location.href;
-		mo.articleTitle = document.title;
-		// PRIVATE: bit.ly API configuration
-		var bitlyApi = {
-			requestUrl: 'http://api.bit.ly/v3/shorten',
-			login: 'uxtechtarget',
-			key: 'R_3711c9f9013670f25d70b047c8deb6f2'
-		};
-		// PUBLIC: gets a 'short' version of passed url and stores it in the DOM
-		mo.getShortUrl = function (urlToShorten, callback) {
-			// if no url is passed, use the current page url
-			if (typeof urlToShorten === 'undefined') {
-				urlToShorten = mo.pageUrl;
-			}
-			// check to see if we've already shortened requested url
-			var shortenedUrl = $('body').data(urlToShorten);
-			if (typeof shortenedUrl === 'undefined') {
-				$.ajax({
-					url: bitlyApi.requestUrl,
-					contentType: 'application/x-www-form-urlencoded',
-					dataType: 'jsonp',
-					data: ({
-						login : bitlyApi.login,
-						apiKey : bitlyApi.key,
-						longUrl : urlToShorten
-					}),
-					error: function () {
-						alert('error in mo.getBitlyUrl function');
-					},
-					success: function (data) {
-						// if we get a shortened url back from bit.ly, store it in the dom with the original url as the key
-						if (data.status_txt === 'OK') {
-							$('body').data(urlToShorten, data.data.url);
-						}
-						// if we don't, log error and just store the orginal url
-						else {
-							//mo.log('bit.ly API log: ' + data.status_txt);
-							$('body').data(urlToShorten, urlToShorten);
-						}
-						callback.apply(this);
-					}
-				});
-			}
-			else {
-				callback.apply(this);
-			}
-		};
-	}(window.mo = window.mo || {}, jQuery));
-	//microsite tracking name for event tracking on page
-	var micrositeTrackingName = (microsite === "null") ? SITE_hostName : microsite;
-	//MobileChaos specific tracking
-	$('.rimMobileChaosButton').bind('click', function (e) {
-		_gaq.push(['_trackEvent', 'MobileChaosContact', 'Email', micrositeTrackingName]);
-	});
-	$('.openContestRules').bind('click', function (e) {
-		e.preventDefault();
-		_gaq.push(['_trackEvent', 'MobileChaosOpen', 'Open Lightbox', micrositeTrackingName]);
-	});
-	$('.micrositeSocialMedia-email').bind('click', function (e) {
-				e.preventDefault();
-				_gaq.push(['_trackEvent','Social','Email',micrositeTrackingName]);
-						// PUBLIC: url of the current page
-				var endpointUrl = 'http://api.addthis.com/oexchange/0.8/forward/email/offer?';
-				var endpointParams = {
-					pubid: 'ra-4f0c7ed813520536',
-					url: window.location.href,
-					title: document.title,
-					email_template: 'TechTargetMicrosites',
-					ct: 1
-				};
-				$.colorbox({
-					iframe: true,
-					opacity: '0.75',
-					height: '775px',
-					initialHeight: '775px',
-					width: '525px',
-					initialWidth: '525px',
-					href: endpointUrl + $.param(endpointParams)
-				});
-			});
+  if ($('#Dell12g .micrositeModuleFeaturedOutput').length && $('#Dell12g .micrositeTabPower').length) {
+
+    $('#Dell12g .micrositeModuleFeaturedOutput')
+      .css('background-image', 'url("http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1.png")')
+      .prepend('<img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1.png"><img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG2.png">');
+    bgFade();
+  }
+
+  if ($('#Dell12g .micrositeModuleFeaturedOutput').length && $('#Dell12g .micrositeTabPower_FR').length) {
+    $('#Dell12g .micrositeModuleFeaturedOutput')
+      .css('background-image','url("http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1_FR.png")')
+      .prepend('<img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1_FR.png"><img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG2_FR.png">');
+    bgFadeFR();
+  }
+
+  if ($('#Dell12g .micrositeModuleFeaturedOutput').length && $('#Dell12g .micrositeTabPower_DE').length) {
+    $('#Dell12g .micrositeModuleFeaturedOutput')
+      .css('background-image','url("http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1_DE.png")')
+      .prepend('<img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG1_DE.png"><img class="bg" src="http://cdn.ttgtmedia.com/microsites/dell12g/images/featuredBG2_DE.png">');
+    bgFadeDE();
+  }
 
 
-			// linkedIn 'share button'; https://developer.linkedin.com/plugins/share-button
-			var linkedInButton = $('.micrositeSocialMedia-linkedInButton');
-			if (linkedInButton.length) {
-				var linkedInButtonInlineScript = '<script type="IN/Share" data-counter="right"></script>';
-				var linkedInButtonScript = 'http://platform.linkedin.com/in.js';
-				linkedInButton.append(linkedInButtonInlineScript);
-				$.getScript(linkedInButtonScript);
-			}
 
-			// twitter 'tweet button'; http://dev.twitter.com/pages/tweet_button
-			var tweetButton = $('.micrositeSocialMedia-tweetButton');
-			if (tweetButton.length) {
-				var tweetButtonScript = 'http://platform.twitter.com/widgets.js';
-				$.getScript(tweetButtonScript);
-			}
+  //social media and colorbox
+  (function (mo, $, undefined) {
+    mo.pageUrl = window.location.href;
+    mo.articleTitle = document.title;
+    // PRIVATE: bit.ly API configuration
+    var bitlyApi = {
+      requestUrl: 'http://api.bit.ly/v3/shorten',
+      login: 'uxtechtarget',
+      key: 'R_3711c9f9013670f25d70b047c8deb6f2'
+    };
+    // PUBLIC: gets a 'short' version of passed url and stores it in the DOM
+    mo.getShortUrl = function (urlToShorten, callback) {
+      // if no url is passed, use the current page url
+      if (typeof urlToShorten === 'undefined') {
+        urlToShorten = mo.pageUrl;
+      }
+      // check to see if we've already shortened requested url
+      var shortenedUrl = $('body').data(urlToShorten);
+      if (typeof shortenedUrl === 'undefined') {
+        $.ajax({
+          url: bitlyApi.requestUrl,
+          contentType: 'application/x-www-form-urlencoded',
+          dataType: 'jsonp',
+          data: ({
+            login : bitlyApi.login,
+            apiKey : bitlyApi.key,
+            longUrl : urlToShorten
+          }),
+          error: function () {
+            alert('error in mo.getBitlyUrl function');
+          },
+          success: function (data) {
+            // if we get a shortened url back from bit.ly, store it in the dom with the original url as the key
+            if (data.status_txt === 'OK') {
+              $('body').data(urlToShorten, data.data.url);
+            }
+            // if we don't, log error and just store the orginal url
+            else {
+              //mo.log('bit.ly API log: ' + data.status_txt);
+              $('body').data(urlToShorten, urlToShorten);
+            }
+            callback.apply(this);
+          }
+        });
+      }
+      else {
+        callback.apply(this);
+      }
+    };
+  }(window.mo = window.mo || {}, jQuery));
+  //microsite tracking name for event tracking on page
+  var micrositeTrackingName = (microsite === "null") ? SITE_hostName : microsite;
+  //MobileChaos specific tracking
+  $('.rimMobileChaosButton').bind('click', function (e) {
+    _gaq.push(['_trackEvent', 'MobileChaosContact', 'Email', micrositeTrackingName]);
+  });
+  $('.openContestRules').bind('click', function (e) {
+    e.preventDefault();
+    _gaq.push(['_trackEvent', 'MobileChaosOpen', 'Open Lightbox', micrositeTrackingName]);
+  });
+  $('.micrositeSocialMedia-email').bind('click', function (e) {
+        e.preventDefault();
+        _gaq.push(['_trackEvent','Social','Email',micrositeTrackingName]);
+            // PUBLIC: url of the current page
+        var endpointUrl = 'http://api.addthis.com/oexchange/0.8/forward/email/offer?';
+        var endpointParams = {
+          pubid: 'ra-4f0c7ed813520536',
+          url: window.location.href,
+          title: document.title,
+          email_template: 'TechTargetMicrosites',
+          ct: 1
+        };
+        $.colorbox({
+          iframe: true,
+          opacity: '0.75',
+          height: '775px',
+          initialHeight: '775px',
+          width: '525px',
+          initialWidth: '525px',
+          href: endpointUrl + $.param(endpointParams)
+        });
+      });
 
-			// facebook 'like' button; http://developers.facebook.com/docs/reference/plugins/like
-			var fbLikeButton = $('.micrositeSocialMedia-facebookLike');
-			if (fbLikeButton.length) {
-				var fbLikeButtonIframe = '<iframe src="http://www.facebook.com/plugins/like.php?layout=button_count&amp;show_faces=false&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;width=90&amp;height=22&amp;href=' + encodeURI(mo.pageUrl) + '&amp;ref=tbdByPaul" scrolling="no" frameborder="0" allowTransparency="true"></iframe>';
-				$(fbLikeButtonIframe).appendTo('.micrositeSocialMedia-facebookLike');
-			}
 
-			// linkedin, facebook & twitter buttons
-			$('.micrositeSocialMedia-linkedin a, .micrositeSocialMedia-facebook a, .micrositeSocialMedia-twitter a').click(function (e) {
+      // linkedIn 'share button'; https://developer.linkedin.com/plugins/share-button
+      var linkedInButton = $('.micrositeSocialMedia-linkedInButton');
+      if (linkedInButton.length) {
+        var linkedInButtonInlineScript = '<script type="IN/Share" data-counter="right"></script>';
+        var linkedInButtonScript = 'http://platform.linkedin.com/in.js';
+        linkedInButton.append(linkedInButtonInlineScript);
+        $.getScript(linkedInButtonScript);
+      }
 
-				e.preventDefault();
+      // twitter 'tweet button'; http://dev.twitter.com/pages/tweet_button
+      var tweetButton = $('.micrositeSocialMedia-tweetButton');
+      if (tweetButton.length) {
+        var tweetButtonScript = 'http://platform.twitter.com/widgets.js';
+        $.getScript(tweetButtonScript);
+      }
 
-				var thisButton = $(this).parent().attr('class');
+      // facebook 'like' button; http://developers.facebook.com/docs/reference/plugins/like
+      var fbLikeButton = $('.micrositeSocialMedia-facebookLike');
+      if (fbLikeButton.length) {
+        var fbLikeButtonIframe = '<iframe src="http://www.facebook.com/plugins/like.php?layout=button_count&amp;show_faces=false&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;width=90&amp;height=22&amp;href=' + encodeURI(mo.pageUrl) + '&amp;ref=tbdByPaul" scrolling="no" frameborder="0" allowTransparency="true"></iframe>';
+        $(fbLikeButtonIframe).appendTo('.micrositeSocialMedia-facebookLike');
+      }
 
-				// retreive OR create + store bit.ly url for twitter/facebook/linkedIn
-				mo.getShortUrl(mo.pageUrl, function () {
+      // linkedin, facebook & twitter buttons
+      $('.micrositeSocialMedia-linkedin a, .micrositeSocialMedia-facebook a, .micrositeSocialMedia-twitter a').click(function (e) {
 
-					var articleURL = encodeURIComponent($('body').data(mo.pageUrl)), // encoded bit.ly url that we get via ajax
-						articleTitle = encodeURIComponent(mo.articleTitle), // encoded title of the page
-						linkedinButtonUrl = 'http://www.linkedin.com/shareArticle?mini=true&url=' + articleURL + '&title=' + articleTitle, // http://www.linkedin.com/shareArticle?mini=true&url=PERMALINK&title=TITLE&source=BLOGNAME&summary=EXCERPT
-						facebookButtonUrl = 'http://www.facebook.com/share.php?u=' + articleURL + '&t=' + articleTitle, // http://www.facebook.com/share.php?u=PERMALINK&t=TITLE
-						twitterButtonUrl = 'http://twitter.com/home?status=Currently reading ' + articleURL; // http://twitter.com/home?status=TITLE%20-%20PERMALINK
+        e.preventDefault();
 
-					switch (thisButton) {
+        var thisButton = $(this).parent().attr('class');
 
-					case 'micrositeSocialMedia-linkedin':
-						_gaq.push(['_trackEvent','Social','LinkedIn',micrositeTrackingName]);
-						window.open(linkedinButtonUrl);
-						break;
-					case 'micrositeSocialMedia-facebook':
-						_gaq.push(['_trackEvent','Social','Facebook',micrositeTrackingName]);
-						window.open(facebookButtonUrl);
-						break;
-					case 'micrositeSocialMedia-twitter':
-						_gaq.push(['_trackEvent','Social','Twitter',micrositeTrackingName]);
-						window.open(twitterButtonUrl);
-						break;
+        // retreive OR create + store bit.ly url for twitter/facebook/linkedIn
+        mo.getShortUrl(mo.pageUrl, function () {
 
-					}
+          var articleURL = encodeURIComponent($('body').data(mo.pageUrl)), // encoded bit.ly url that we get via ajax
+            articleTitle = encodeURIComponent(mo.articleTitle), // encoded title of the page
+            linkedinButtonUrl = 'http://www.linkedin.com/shareArticle?mini=true&url=' + articleURL + '&title=' + articleTitle, // http://www.linkedin.com/shareArticle?mini=true&url=PERMALINK&title=TITLE&source=BLOGNAME&summary=EXCERPT
+            facebookButtonUrl = 'http://www.facebook.com/share.php?u=' + articleURL + '&t=' + articleTitle, // http://www.facebook.com/share.php?u=PERMALINK&t=TITLE
+            twitterButtonUrl = 'http://twitter.com/home?status=Currently reading ' + articleURL; // http://twitter.com/home?status=TITLE%20-%20PERMALINK
 
-				});
+          switch (thisButton) {
 
-			});
+          case 'micrositeSocialMedia-linkedin':
+            _gaq.push(['_trackEvent','Social','LinkedIn',micrositeTrackingName]);
+            window.open(linkedinButtonUrl);
+            break;
+          case 'micrositeSocialMedia-facebook':
+            _gaq.push(['_trackEvent','Social','Facebook',micrositeTrackingName]);
+            window.open(facebookButtonUrl);
+            break;
+          case 'micrositeSocialMedia-twitter':
+            _gaq.push(['_trackEvent','Social','Twitter',micrositeTrackingName]);
+            window.open(twitterButtonUrl);
+            break;
+
+          }
+
+        });
+
+      });
 });
 // end doc.ready
 
 //left scrollbar
 $.fn.leftScrollbar = function(){
 
-	'use strict';
+  'use strict';
     var items = $(this);
     $(function(){
         items.each(function(){
@@ -353,99 +353,99 @@ $.fn.leftScrollbar = function(){
 
 //tabs
 (function($) {
-	$.fn.featureList = function(options) {
-		var tabs	= $(this);
-		var output	= $(options.output);
+  $.fn.featureList = function(options) {
+    var tabs  = $(this);
+    var output  = $(options.output);
 
-		new jQuery.featureList(tabs, output, options);
+    new jQuery.featureList(tabs, output, options);
 
-		return this;
-	};
+    return this;
+  };
 
-	$.featureList = function(tabs, output, options) {
-		function slide(nr) {
-			if (typeof nr == "undefined") {
-				nr = visible_item + 1;
-				nr = nr >= total_items ? 0 : nr;
-			}
+  $.featureList = function(tabs, output, options) {
+    function slide(nr) {
+      if (typeof nr == "undefined") {
+        nr = visible_item + 1;
+        nr = nr >= total_items ? 0 : nr;
+      }
 
-			tabs.removeClass('current').filter(":eq(" + nr + ")").addClass('current');
+      tabs.removeClass('current').filter(":eq(" + nr + ")").addClass('current');
 
-			output.stop(true, true).filter(":visible").css({ 'position' : 'absolute','left' : '-10000px' });
-			output.filter(":eq(" + nr + ")").css({ 'position' : 'relative','left' : '0px' }, function() {
-				visible_item = nr;
-			});
-		}
+      output.stop(true, true).filter(":visible").css({ 'position' : 'absolute','left' : '-10000px' });
+      output.filter(":eq(" + nr + ")").css({ 'position' : 'relative','left' : '0px' }, function() {
+        visible_item = nr;
+      });
+    }
 
-		var options			= options || {};
-		var total_items		= tabs.length;
-		var visible_item	= options.start_item || 0;
+    var options     = options || {};
+    var total_items   = tabs.length;
+    var visible_item  = options.start_item || 0;
 
-		options.pause_on_hover		= options.pause_on_hover		|| true;
-		options.transition_interval	= options.transition_interval	|| 0;
+    options.pause_on_hover    = options.pause_on_hover    || true;
+    options.transition_interval = options.transition_interval || 0;
 
-		output.css({ 'position' : 'absolute','left' : '-10000px' }).eq( visible_item ).css({ 'position' : 'relative','left' : '0px' });
-		tabs.eq( visible_item ).addClass('current');
+    output.css({ 'position' : 'absolute','left' : '-10000px' }).eq( visible_item ).css({ 'position' : 'relative','left' : '0px' });
+    tabs.eq( visible_item ).addClass('current');
 
-		tabs.click(function() {
-			if ($(this).hasClass('current')) {
-				return false;
-			}
+    tabs.click(function() {
+      if ($(this).hasClass('current')) {
+        return false;
+      }
 
-			slide( tabs.index( this) );
-		});
+      slide( tabs.index( this) );
+    });
 
-		if (options.transition_interval > 0) {
-			var timer = setInterval(function () {
-				slide();
-			}, options.transition_interval);
+    if (options.transition_interval > 0) {
+      var timer = setInterval(function () {
+        slide();
+      }, options.transition_interval);
 
-			if (options.pause_on_hover) {
-				tabs.mouseenter(function() {
-					clearInterval( timer );
+      if (options.pause_on_hover) {
+        tabs.mouseenter(function() {
+          clearInterval( timer );
 
-				}).mouseleave(function() {
-					clearInterval( timer );
-					timer = setInterval(function () {
-						slide();
-					}, options.transition_interval);
-				});
-			}
-		}
-	};
+        }).mouseleave(function() {
+          clearInterval( timer );
+          timer = setInterval(function () {
+            slide();
+          }, options.transition_interval);
+        });
+      }
+    }
+  };
 })(jQuery);
 
 // hover tabs
 $(function(){
-	var timerId,
+  var timerId,
     $mainMenuItems = $("#Dell12g .micrositeTabPower, #Dell12g .micrositeTabStorage, #Dell12g .micrositeTabVirt, #Dell12g .micrositeTabCloud, #Dell12g .micrositeTabPower_FR, #Dell12g .micrositeTabStorage_FR, #Dell12g .micrositeTabVirt_FR, #Dell12g .micrositeTabCloud_FR, #Dell12g .micrositeTabPower_DE, #Dell12g .micrositeTabStorage_DE, #Dell12g .micrositeTabVirt_DE, #Dell12g .micrositeTabCloud_DE"),
     $subMenus = $("#Dell12g .micrositeFeaturedPower, #Dell12g .micrositeFeaturedStorage, #Dell12g .micrositeFeaturedVirt, #Dell12g .micrositeFeaturedCloud, #Dell12g .micrositeFeaturedPower_FR, #Dell12g .micrositeFeaturedStorage_FR, #Dell12g .micrositeFeaturedVirt_FR, #Dell12g .micrositeFeaturedCloud_FR, #Dell12g .micrositeFeaturedPower_DE, #Dell12g .micrositeFeaturedStorage_DE, #Dell12g .micrositeFeaturedVirt_DE, #Dell12g .micrositeFeaturedCloud_DE").hide();
 
-	$mainMenuItems.hover(
-		function(){
-			clearTimeout(timerId);
-			$subMenus.hide();
-			$($subMenus[$mainMenuItems.index(this)]).hide()
-													.removeClass('hidden')
-													.show(),
-													$(this).css({ 'border' : '1px solid #5e5e5e' });
-		}, function(){
-			var i = $mainMenuItems.index(this);
-			timerId = setTimeout(function(){$($subMenus[i]).hide();},0);
-			$(this).css({ border: "1px solid transparent" });
-		}
-	);
+  $mainMenuItems.hover(
+    function(){
+      clearTimeout(timerId);
+      $subMenus.hide();
+      $($subMenus[$mainMenuItems.index(this)]).hide()
+                          .removeClass('hidden')
+                          .show(),
+                          $(this).css({ 'border' : '1px solid #5e5e5e' });
+    }, function(){
+      var i = $mainMenuItems.index(this);
+      timerId = setTimeout(function(){$($subMenus[i]).hide();},0);
+      $(this).css({ border: "1px solid transparent" });
+    }
+  );
 
-	$subMenus.hover(
-		function() {
-		   clearTimeout(timerId);
-		   $($mainMenuItems[$subMenus.index(this)]).css({ 'border' : '1px solid #5e5e5e' });
-		},
-		function() {
-		   $(this).hide();
-		   $($mainMenuItems[$subMenus.index(this)]).css({ 'border' : '1px solid transparent' });
-		}
-	);
+  $subMenus.hover(
+    function() {
+       clearTimeout(timerId);
+       $($mainMenuItems[$subMenus.index(this)]).css({ 'border' : '1px solid #5e5e5e' });
+    },
+    function() {
+       $(this).hide();
+       $($mainMenuItems[$subMenus.index(this)]).css({ 'border' : '1px solid transparent' });
+    }
+  );
 
 
 });
@@ -465,7 +465,7 @@ $(function(){
  *   autoPlay: boolean; this will automagically rotate through the content list
  *   autoPlaySpeed: integer; the speed (in ms) at which the autoplay will rotate through the items
  *   mouseEvent: string; which mouse event will trigger the content switch; currently supported: hover & click
- *   switchSpeed: integer; the speed (0 - ∞ in ms) that it takes to switch to displaying a new contentItem
+ *   switchSpeed: integer; the speed (0 - âˆž in ms) that it takes to switch to displaying a new contentItem
  *   equalizeHeights: boolean; equalizes the heights of the content container and navigation list to whichever is largest
  * Dependencies: none *
  */
@@ -480,7 +480,7 @@ $(function(){
  *   autoPlay: boolean; this will automagically rotate through the content list
  *   autoPlaySpeed: integer; the speed (in ms) at which the autoplay will rotate through the items
  *   mouseEvent: string; which mouse event will trigger the content switch; currently supported: hover & click
- *   switchSpeed: integer; the speed (0 - ∞ in ms) that it takes to switch to displaying a new contentItem
+ *   switchSpeed: integer; the speed (0 - âˆž in ms) that it takes to switch to displaying a new contentItem
  *   equalizeHeights: boolean; equalizes the heights of the content container and navigation list to whichever is largest
  * Dependencies: none
  */

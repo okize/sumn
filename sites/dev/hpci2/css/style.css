@@ -326,15 +326,17 @@ a.activeThumbnail { border: 5px solid #007dba !important; }
 .contentTabs { overflow: hidden; margin: 0 0 25px; position: relative; }
 .contentTabsNav { position: relative; }
 .contentTabsNav ul { margin:0 !important; padding: 0 !important; list-style: none; }
+.contentTabsNav li:hover {
+  border-radius: 8px 8px 0 0;
+}
 .contentTabsNav li {
   display: block;
   float: left;
   border-radius: 8px 8px 0 0;
   width: 300px;
   height: 40px;
-  margin: 0 10px 0 0;
+  margin: 0 10px -1px 0;
   overflow: hidden;
-  position: relative;
   top: 0;
 }
 .contentTabsNav li.active {
@@ -393,7 +395,7 @@ a.activeThumbnail { border: 5px solid #007dba !important; }
 .oneColList p { margin: 0 0 5px !important; }
 .contentTabsCaption { font-size: 26px; margin: 0 0 5px !important; }
 
-/* end New Tab Module 03-26-13  */
+.contentTabsAssetTopic { font-weight: bold; font-size: 14px; display: block; margin: 0 0 5px; }
 
 
 /*
@@ -402,4 +404,3 @@ a.activeThumbnail { border: 5px solid #007dba !important; }
 .micrositeFeaturedTabCloud > a { background: url(../images/tab_cloudOff.png) no-repeat; }
 .micrositeFeaturedTabCloud > a.current { background: url(../images/tab_cloudOn.png) no-repeat; bottom: -1px; }
  */
-

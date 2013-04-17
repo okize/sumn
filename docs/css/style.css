@@ -1093,7 +1093,8 @@ table th[class*="span"],
   background-color: #c4e3f3;
 }
 [class^="icon-"],
-[class*=" icon-"] {
+[class*=" icon-"],
+.tablesorter-icon {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -1549,13 +1550,12 @@ table th[class*="span"],
   background-position: -456px -144px;
 }
 
-
 .micrositeTable caption { font-size: 26px; font-weight: bold; margin: 0 0 20px; text-align: center; }
 .micrositeTableFooterCpation { color: #999; font-size: 16px; font-weight: bold; text-align: center !important; }
 .micrositeTable tfoot { background-color: #ccc; }
 
 #micrositeListTable {
-  width: 85%;
+  width: 95%;
   margin: 25px auto;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.075);
 }
@@ -1563,12 +1563,40 @@ table th[class*="span"],
 #micrositeListTable tr:hover td { background-color: #eee !important; }
 #micrositeListTable th { text-align: center; cursor: pointer; }
 
-td.pdSite, td.previewSite, td.localBuiltSite, td.state { text-align: center; min-width: 35px; }
+td.pdSite, td.previewSite, td.localBuiltSite, td.state { text-align: center; min-width: 54px; max-width: 54px; width: 54px; }
 td.state.active { background-color: #acd779 !important; }
 td.state.inactive { background-color: #ed765c !important; }
 td.state span { display: none; }
 td.count { text-align: center; width: 20px; }
-td.releases { text-align: center; width: 80px; }
-td.createDate { text-align: center; min-width: 80px; width: 80px; }
+td.releases { text-align: center; min-width: 90px; width: 90px; }
+td.createDate { text-align: center; min-width: 90px; width: 90px; }
 td.localDevSite { max-width: 280px; width: 280px;  }
 td.localDevSite, td.pdSite, td.previewSite, td.localBuiltSite, td.publishedSite { cursor: pointer; }
+
+.tablesorter-icon { display: none; }
+th.tablesorter-headerAsc, th.tablesorter-headerDesc { background-color: #efefef; }
+th.tablesorter-headerAsc .tablesorter-icon, th.tablesorter-headerDesc .tablesorter-icon { display: inline-block; }
+th.tablesorter-headerAsc .tablesorter-icon { background-position: -289px -96px; }
+th.tablesorter-headerDesc .tablesorter-icon { background-position: -312px -96px; }
+
+
+/* for user.json guide */
+.npm .pair {
+  cursor:pointer;
+}
+
+.npm .pair:hover {
+  background-color: #FFFBCC;
+}
+.pair {
+  padding:0px;
+  margin:0px;
+}
+
+.hint {
+  position:absolute;
+  top:90px;
+  font-size:24px;
+  width:500px;
+  line-height:42px;
+}
