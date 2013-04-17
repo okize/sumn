@@ -10,7 +10,6 @@ git clone https://github.com/okize/sumn.git
 npm install
 ```
 
-## Tech Stack
 
 ### NPM Modules used
 

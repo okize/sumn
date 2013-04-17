@@ -22,7 +22,7 @@
 
   "error": {
     "genericError": "%s",
-    "ftpError": "could not connect to %s \n make sure you are on the TTGT network or VPN",
+    "ftpErrorVpn": "could not connect to %s \n make sure you are on the TTGT network or VPN",
     "argumentsMissing": "arguments for %s missing",
     "notValidProperty": "%s is not a valid property",
     "needSitename": "please enter a name for the new microsite",
@@ -38,7 +38,8 @@
     "emailFail": "something went wrong so the email was not sent\n%s",
     "noReleaseNotes": "please include release notes via the -m flag",
     "invalidAssetTypeSpecified": "%s invalid asset types\n assets must be either 'javascript', 'css' and/or 'images' separated by commas",
-    "missingSiteName": "please include the name of the site you want to %s"
+    "missingSiteName": "please include the name of the site you want to %s",
+    "ftpError": "there was a problem starting the FTP session"
   },
 
   "warn": {
