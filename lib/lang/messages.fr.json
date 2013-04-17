@@ -19,7 +19,7 @@
 
   "error": {
     "genericError": "%i",
-    "ftpError": "ouvait pas se connecter à %i \nnare vous sur le réseau?",
+    "ftpErrorVpn": "ouvait pas se connecter à %i \nnare vous sur le réseau?",
     "argumentsMissing": "Les arguments pour %i manquant",
     "notValidProperty": "%i n'est pas une propriété valide",
     "needSitename": "entrer un nom pour le nouveau site web",

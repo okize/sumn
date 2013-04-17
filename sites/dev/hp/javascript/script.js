@@ -41,7 +41,6 @@ $(document).ready(function ($) {
 	// styled scrollbars
 	$('.micrositeFeaturedRelatedBody, .micrositeModuleFrontLines').not('#Dell12g .micrositeFeaturedRelatedBody').jScrollPane();
 
-
 	// the reason for this stupid stupid stupid hack: for the VIP sites we used a version of the featured content tabs that didn't
 	// actually have any tabs, but that _needed_ to have a custom scrollbar which meant that the scollbar that is normally
 	// applied to that widget _everywhere_ because we use the same javascript file for every microsite for some unknown reason
@@ -88,6 +87,8 @@ $(document).ready(function ($) {
 	$('.micrositeFeaturedRelated ul li h4:nth-child(2)').css({ padding: "0 0 10px 0" });
 	$('#micrositeContentColumnOneThirdRight .micrositeModuleFeatured ul.micrositeModuleFeaturedOutput > li').css({ padding: "0" });
 	$('#micrositeContentColumnOneThirdRight .micrositeModuleFeatured > ul').css({ position: "relative" });
+  $('.micrositeModuleFeatured > ul').css({ position: "absolute" });
+  $('ul.micrositeModuleFeaturedOutput > li').css({ padding: "20px" });
 
 	// social media icons
 	if ($('#micrositeSocialMediaNav').length) {
@@ -352,67 +353,75 @@ $.fn.leftScrollbar = function(){
 };
 
 //tabs
-(function($) {
-	$.fn.featureList = function(options) {
-		var tabs	= $(this);
-		var output	= $(options.output);
+/*
+ * FeatureList - simple and easy creation of an interactive "Featured Items" widget
+ * Examples and documentation at: http://jqueryglobe.com/article/feature_list/
+ * Version: 1.0.0 (01/09/2009)
+ * Copyright (c) 2009 jQueryGlobe
+ * Licensed under the MIT License: http://en.wikipedia.org/wiki/MIT_License
+ * Requires: jQuery v1.3+
+*/
+;(function($) {
+  $.fn.featureList = function(options) {
+    var tabs  = $(this);
+    var output  = $(options.output);
 
-		new jQuery.featureList(tabs, output, options);
+    new jQuery.featureList(tabs, output, options);
 
-		return this;
-	};
+    return this;
+  };
 
-	$.featureList = function(tabs, output, options) {
-		function slide(nr) {
-			if (typeof nr == "undefined") {
-				nr = visible_item + 1;
-				nr = nr >= total_items ? 0 : nr;
-			}
+  $.featureList = function(tabs, output, options) {
+    function slide(nr) {
+      if (typeof nr == "undefined") {
+        nr = visible_item + 1;
+        nr = nr >= total_items ? 0 : nr;
+      }
 
-			tabs.removeClass('current').filter(":eq(" + nr + ")").addClass('current');
+      tabs.removeClass('current').filter(":eq(" + nr + ")").addClass('current');
 
-			output.stop(true, true).filter(":visible").css({ 'position' : 'absolute','left' : '-10000px' });
-			output.filter(":eq(" + nr + ")").css({ 'position' : 'relative','left' : '0px' }, function() {
-				visible_item = nr;
-			});
-		}
+      output.stop(true, true).filter(":visible").fadeOut();
+      output.filter(":eq(" + nr + ")").fadeIn(function() {
+        visible_item = nr;
+      });
+    }
 
-		var options			= options || {};
-		var total_items		= tabs.length;
-		var visible_item	= options.start_item || 0;
+    var options     = options || {};
+    var total_items   = tabs.length;
+    var visible_item  = options.start_item || 0;
 
-		options.pause_on_hover		= options.pause_on_hover		|| true;
-		options.transition_interval	= options.transition_interval	|| 0;
+    options.pause_on_hover    = options.pause_on_hover    || true;
+    options.transition_interval = options.transition_interval || 0;
 
-		output.css({ 'position' : 'absolute','left' : '-10000px' }).eq( visible_item ).css({ 'position' : 'relative','left' : '0px' });
-		tabs.eq( visible_item ).addClass('current');
+    output.hide().eq( visible_item ).show();
+    tabs.eq( visible_item ).addClass('current');
 
-		tabs.click(function() {
-			if ($(this).hasClass('current')) {
-				return false;
-			}
+    tabs.click(function() {
+      if ($(this).hasClass('current')) {
+        return false;
+      }
 
-			slide( tabs.index( this) );
-		});
+      slide( tabs.index( this) );
+    });
 
-		if (options.transition_interval > 0) {
-			var timer = setInterval(function () {
-				slide();
-			}, options.transition_interval);
+    if (options.transition_interval > 0) {
+      var timer = setInterval(function () {
+        slide();
+      }, options.transition_interval);
 
-			if (options.pause_on_hover) {
-				tabs.mouseenter(function() {
-					clearInterval( timer );
+      if (options.pause_on_hover) {
+        tabs.mouseenter(function() {
+          clearInterval( timer );
 
-				}).mouseleave(function() {
-					clearInterval( timer );
-					timer = setInterval(function () {
-						slide();
-					}, options.transition_interval);
-				});
-			}
-		}
-	};
+        }).mouseleave(function() {
+          clearInterval( timer );
+          timer = setInterval(function () {
+            slide();
+          }, options.transition_interval);
+        });
+      }
+    }
+  };
 })(jQuery);
 
 // hover tabs

@@ -19,7 +19,7 @@
 
   "error": {
     "genericError": "%i",
-    "ftpError": "no podía conectar a %i \n¿estás conectado al red?",
+    "ftpErrorVpn": "no podía conectar a %i \n¿estás conectado al red?",
     "argumentsMissing": "los argumentos por %i están perdidos",
     "notValidProperty": "%i no es una propiedad válida",
     "needSitename": "entra el nombre del sitios web",

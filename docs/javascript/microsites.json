@@ -15,7 +15,7 @@
     },
     "Brocade": {
       "createDate": 1330578000000,
-      "isEmbedded": true,
+      "isEmbedded": false,
       "isActive": false,
       "isOldDesign": false,
       "siteDirectory": "brocade",
@@ -58,8 +58,8 @@
       "isActive": false,
       "isOldDesign": false,
       "siteDirectory": "apcdatacenterpowerzone",
-      "url": "http://www.preview.techtarget.com/APCDataCenter",
-      "urlPreview": "http://searchEnterpriseDesktop.com/APCPowerandProtection",
+      "url": "http://searchdatacenter.techtarget.com/APCDataCenterPowerZone",
+      "urlPreview": "http://preview.techtarget.com/APCDataCenter",
       "releases": {
         "count": 0,
         "last": 0

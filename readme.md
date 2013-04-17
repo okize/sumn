@@ -1,17 +1,15 @@
-# sumn: Start Up a Microsite Now
 A command-line tool for microsite front-end management
 
-#![sumn](http://okize.com/sumnLogoColor.png)
-
 ## Installation
+
+### Requirements
+
+* OS X with NodeJS, SASS & Compass, PhantomJS & CasperJS, Xcode (w/ command-line tools installed)
 
 ```
 git clone https://github.com/okize/sumn.git
 npm install
 ```
-
-## Tech Stack
-
 ### NPM Modules used
 
 * [underscore](https://github.com/documentcloud/underscore)
