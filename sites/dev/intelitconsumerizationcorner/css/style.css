@@ -297,5 +297,5 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 .addThisVertical.addthis_default_style { width: 36px; left: -23px; background: none; }
 .addThisVertical.addthis_20x20_style { width: 40px; left: -61px; }
 .addThisVertical.addthis_20x20_style a { margin: 10px; }
-.addThisVertical.addthis_32x32_style { width: 52px; margin: 10px; left: -83px;}
+.addThisVertical.addthis_32x32_style { width: 52px; margin: 10px; left: -83px; }
 .addThisVertical.addthis_32x32_style a { margin: 12px; }

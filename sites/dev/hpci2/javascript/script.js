@@ -3,9 +3,16 @@ $(document).ready(function ($) {
 
 	'use strict';
 
-/* content tabs component */
+  /* content tabs component */
   $('.contentTabs').contentTabs({
     tabLocation: 'top'
+  });
+
+  /* temporary hack to move asset topics*/
+  var assetTopics = $('.contentTabsAssetTopic');
+  assetTopics.each( function() {
+    var $this = $(this);
+    $this.prependTo( $this.parent().parent() );
   });
 
 	// hacky hack to add anchor to image
